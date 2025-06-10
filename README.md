@@ -46,7 +46,6 @@
       text-align: left;
       font-weight: 500;
     }
-    /* Style for dropdowns on mobile */
     .channel-container select {
       width: 100%;
       padding: 0.75rem;
@@ -70,7 +69,6 @@
       color: #374151;
       margin-bottom: 0.5rem;
     }
-    /* Make error messages more prominent on mobile */
     .error-message, .wardrobe-error {
       font-size: 1rem;
       padding: 0.5rem;
@@ -255,7 +253,8 @@
   </div>
 
   <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbx8w-6bX4A0eU0Wq0XzB5eX5eX5eX5eX5eX5eX5eX5eX5eX5eX/dev';
+    // Replace this URL with the actual /exec URL after deploying the Google Apps Script
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx18pbpszswuA-WvrwaZZy8-GWHTU1v_1zsZi-BHmopMYGrLuP3_E7lPQq3RcVSeHEU/exec';
     const form = document.getElementById('surveyForm');
     const wardrobeInputs = document.querySelectorAll('.wardrobe-percent');
     const wardrobeError = document.querySelector('.wardrobe-error');
@@ -455,7 +454,7 @@
         })
         .catch(error => {
           console.error('Fetch Error:', error); // Debugging
-          alert('Error submitting form: ' + error.message + '. Please check your network connection and try again.');
+          alert(`Error submitting form: ${error.message}. Please check your network connection and ensure the Google Apps Script is deployed correctly with the /exec endpoint.`);
         });
       } else {
         console.log('Validation failed, form not submitted.'); // Debugging
