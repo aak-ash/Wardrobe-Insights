@@ -74,7 +74,7 @@
 <body class="bg-gray-50 min-h-screen flex items-center justify-center p-4">
   <div class="form-container mx-auto p-8">
     <h1 class="text-3xl font-bold text-gray-800 mb-4 text-center">Fashion Survey - Wardrobe Insights</h1>
-    <p class="text-gray-600 mb-6 text-center">let us uncover your fashion journey! Share your shopping habits, favorite brands, and wardrobe vibes in this quick survey. All fields marked with * are required, and your responses are 100% confidential.</p>
+    <p class="text-gray-600 mb-6 text-center">Share your shopping habits, favorite brands, and wardrobe vibes in this quick survey. All fields marked with * are required, and your responses are 100% confidential.</p>
     <form id="surveyForm" class="space-y-8">
       <!-- Demographics -->
       <div class="mb-6">
