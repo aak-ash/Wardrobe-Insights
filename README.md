@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clothing Purchase Survey</title>
+  <title>Wardrobe Insights</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     body {
@@ -36,8 +36,8 @@
 </head>
 <body class="bg-gray-50 min-h-screen flex items-center justify-center p-4">
   <div class="form-container mx-auto p-8">
-    <h1 class="text-3xl font-bold text-gray-800 mb-4 text-center">Clothing Purchase Survey</h1>
-    <p class="text-gray-600 mb-6 text-center">For individuals aged 18–40. Please share your clothing preferences. All fields marked with * are required. Responses are confidential.</p>
+    <h1 class="text-3xl font-bold text-gray-800 mb-4 text-center">Wardrobe Insights</h1>
+    <p class="text-gray-600 mb-6 text-center">All fields marked with * are required. Responses are confidential.</p>
     <form id="surveyForm" class="space-y-8">
       <!-- Demographics -->
       <div class="mb-6">
