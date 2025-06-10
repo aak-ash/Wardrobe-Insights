@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wardrobe Insights</title>
+  <title>Fashion Survey - Wardrobe Insights</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     body {
@@ -73,8 +73,8 @@
 </head>
 <body class="bg-gray-50 min-h-screen flex items-center justify-center p-4">
   <div class="form-container mx-auto p-8">
-    <h1 class="text-3xl font-bold text-gray-800 mb-4 text-center">Wardrobe Insights</h1>
-    <p class="text-gray-600 mb-6 text-center">All fields marked with * are required. Responses are confidential.</p>
+    <h1 class="text-3xl font-bold text-gray-800 mb-4 text-center">Fashion Survey - Wardrobe Insights</h1>
+    <p class="text-gray-600 mb-6 text-center">let us uncover your fashion journey! Share your shopping habits, favorite brands, and wardrobe vibes in this quick survey. All fields marked with * are required, and your responses are 100% confidential.</p>
     <form id="surveyForm" class="space-y-8">
       <!-- Demographics -->
       <div class="mb-6">
@@ -111,23 +111,23 @@
         <p class="text-sm font-medium text-gray-600 mb-3">Estimate the percentage of your wardrobe for each category (total must sum to 100%): *</p>
         <div class="space-y-4">
           <div>
-            <label class="block text-sm font-medium text-gray-700">Going out/Partywear (%)</label>
+            <label class="block text-sm font-medium text-gray-700">Going out/Partywear (%) <span class="text-sm text-gray-600">(Special occasion statement pieces, e.g., cocktail dresses, tuxedos)</span></label>
             <input type="number" name="Wardrobe_Going_out" min="0" max="100" class="wardrobe-percent input-field w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
           </div>
           <div>
-            <label class="block text-sm font-medium text-gray-700">Casual Wear (%)</label>
+            <label class="block text-sm font-medium text-gray-700">Casual Wear (%) <span class="text-sm text-gray-600">(Everyday informal wear, including loungewear, e.g., t-shirts, jeans)</span></label>
             <input type="number" name="Wardrobe_Casual" min="0" max="100" class="wardrobe-percent input-field w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
           </div>
           <div>
-            <label class="block text-sm font-medium text-gray-700">Formals/Semi-formals (%)</label>
+            <label class="block text-sm font-medium text-gray-700">Formals/Semi-formals (%) <span class="text-sm text-gray-600">(Professional or business attire, e.g., suits, blazers)</span></label>
             <input type="number" name="Wardrobe_Formals" min="0" max="100" class="wardrobe-percent input-field w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
           </div>
           <div>
-            <label class="block text-sm font-medium text-gray-700">Ethnic/Indo-western (%)</label>
+            <label class="block text-sm font-medium text-gray-700">Ethnic/Indo-western (%) <span class="text-sm text-gray-600">(Traditional or fusion cultural wear, e.g., sarees, kurtas)</span></label>
             <input type="number" name="Wardrobe_Ethnic" min="0" max="100" class="wardrobe-percent input-field w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
           </div>
           <div>
-            <label class="block text-sm font-medium text-gray-700">Others (incl. Nightwear) (%)</label>
+            <label class="block text-sm font-medium text-gray-700">Others (incl. Nightwear) (%) <span class="text-sm text-gray-600">(Nightwear, gym wear, or specialty items, e.g., pajamas, athletic wear)</span></label>
             <input type="number" name="Wardrobe_Others" min="0" max="100" class="wardrobe-percent input-field w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
           </div>
         </div>
@@ -137,8 +137,9 @@
       <!-- Category: Going out/Partywear -->
       <div class="category mb-6">
         <h2 class="text-xl font-semibold text-gray-700 mb-4 section-title pb-2">Going out/Partywear</h2>
+        <p class="text-sm text-gray-600 mb-3">Clothing designed for special occasions like parties, functions, or fancy dinners, where you wear statement pieces to stand out (e.g., cocktail dresses, tuxedos, sequined outfits).</p>
         <div class="mb-6">
-          <p class="text-sm font-medium text-gray-600 mb-3">Purchase Channel Split (select a percentage for each channel; total must be exactly 100%). Select one option per channel: *</p>
+          <p class="text-sm font-medium text-gray-600 mb-3">Purchase Channel Split (select a percentage for each channel; total must be exactly 100%). Round your estimates to the nearest option using: 0%–10% → 0%, 11%–30% → 20%, 31%–50% → 40%, 51%–70% → 60%, 71%–90% → 80%, 91%–100% → 100%. Select one option per channel: *</p>
           <div class="overflow-x-auto">
             <table class="w-full table-auto border-collapse">
               <thead>
@@ -218,8 +219,9 @@
       <!-- Category: Casual Wear -->
       <div class="category mb-6">
         <h2 class="text-xl font-semibold text-gray-700 mb-4 section-title pb-2">Casual Wear</h2>
+        <p class="text-sm text-gray-600 mb-3">Everyday clothing for informal settings like travel, casual brunches, meeting friends, or lounging at home, prioritizing comfort and simplicity (e.g., t-shirts, jeans, sneakers, loungewear).</p>
         <div class="mb-6">
-          <p class="text-sm font-medium text-gray-600 mb-3">Purchase Channel Split (select a percentage for each channel; total must be exactly 100%). Select one option per channel: *</p>
+          <p class="text-sm font-medium text-gray-600 mb-3">Purchase Channel Split (select a percentage for each channel; total must be exactly 100%). Round your estimates to the nearest option using: 0%–10% → 0%, 11%–30% → 20%, 31%–50% → 40%, 51%–70% → 60%, 71%–90% → 80%, 91%–100% → 100%. Select one option per channel: *</p>
           <div class="overflow-x-auto">
             <table class="w-full table-auto border-collapse">
               <thead>
@@ -299,8 +301,9 @@
       <!-- Category: Formals/Semi-formals -->
       <div class="category mb-6">
         <h2 class="text-xl font-semibold text-gray-700 mb-4 section-title pb-2">Formals/Semi-formals</h2>
+        <p class="text-sm text-gray-600 mb-3">Professional or business-appropriate clothing for workplaces, meetings, or semi-formal events, typically structured and polished (e.g., suits, blazers, dress shirts).</p>
         <div class="mb-6">
-          <p class="text-sm font-medium text-gray-600 mb-3">Purchase Channel Split (select a percentage for each channel; total must be exactly 100%). Select one option per channel: *</p>
+          <p class="text-sm font-medium text-gray-600 mb-3">Purchase Channel Split (select a percentage for each channel; total must be exactly 100%). Round your estimates to the nearest option using: 0%–10% → 0%, 11%–30% → 20%, 31%–50% → 40%, 51%–70% → 60%, 71%–90% → 80%, 91%–100% → 100%. Select one option per channel: *</p>
           <div class="overflow-x-auto">
             <table class="w-full table-auto border-collapse">
               <thead>
@@ -380,8 +383,9 @@
       <!-- Category: Ethnic/Indo-western -->
       <div class="category mb-6">
         <h2 class="text-xl font-semibold text-gray-700 mb-4 section-title pb-2">Ethnic/Indo-western</h2>
+        <p class="text-sm text-gray-600 mb-3">Traditional or fusion clothing reflecting cultural heritage or modern adaptations, worn for festivals, weddings, or cultural events (e.g., sarees, kurtas, lehengas, Indo-western dresses).</p>
         <div class="mb-6">
-          <p class="text-sm font-medium text-gray-600 mb-3">Purchase Channel Split (select a percentage for each channel; total must be exactly 100%). Select one option per channel: *</p>
+          <p class="text-sm font-medium text-gray-600 mb-3">Purchase Channel Split (select a percentage for each channel; total must be exactly 100%). Round your estimates to the nearest option using: 0%–10% → 0%, 11%–30% → 20%, 31%–50% → 40%, 51%–70% → 60%, 71%–90% → 80%, 91%–100% → 100%. Select one option per channel: *</p>
           <div class="overflow-x-auto">
             <table class="w-full table-auto border-collapse">
               <thead>
@@ -461,8 +465,9 @@
       <!-- Category: Others (incl. Nightwear) -->
       <div class="category mb-6">
         <h2 class="text-xl font-semibold text-gray-700 mb-4 section-title pb-2">Others (incl. Nightwear)</h2>
+        <p class="text-sm text-gray-600 mb-3">Miscellaneous clothing not covered by other categories, including nightwear, gym wear, or other specialty items (e.g., pajamas, athletic wear, costumes).</p>
         <div class="mb-6">
-          <p class="text-sm font-medium text-gray-600 mb-3">Purchase Channel Split (select a percentage for each channel; total must be exactly 100%). Select one option per channel: *</p>
+          <p class="text-sm font-medium text-gray-600 mb-3">Purchase Channel Split (select a percentage for each channel; total must be exactly 100%). Round your estimates to the nearest option using: 0%–10% → 0%, 11%–30% → 20%, 31%–50% → 40%, 51%–70% → 60%, 71%–90% → 80%, 91%–100% → 100%. Select one option per channel: *</p>
           <div class="overflow-x-auto">
             <table class="w-full table-auto border-collapse">
               <thead>
