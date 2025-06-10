@@ -82,6 +82,13 @@
         box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
         outline: none;
       }
+      /* Make error messages more prominent on mobile */
+      .error-message, .wardrobe-error {
+        font-size: 1rem;
+        padding: 0.5rem;
+        background-color: #fee2e2;
+        border-radius: 0.5rem;
+      }
     }
     @media (min-width: 641px) {
       /* Ensure table is visible on larger screens */
@@ -228,7 +235,7 @@
             <div>
               <label>Platforms like Myntra/Ajio</label>
               <select name="Going_out_Platforms" class="percent" required>
-                <option value="0">0%</option>
+                <option value="0" selected>0%</option>
                 <option value="20">20%</option>
                 <option value="40">40%</option>
                 <option value="60">60%</option>
@@ -239,7 +246,7 @@
             <div>
               <label>Brand Websites</label>
               <select name="Going_out_Brand_Websites" class="percent" required>
-                <option value="0">0%</option>
+                <option value="0" selected>0%</option>
                 <option value="20">20%</option>
                 <option value="40">40%</option>
                 <option value="60">60%</option>
@@ -250,7 +257,7 @@
             <div>
               <label>D2C/Social Media</label>
               <select name="Going_out_D2C" class="percent" required>
-                <option value="0">0%</option>
+                <option value="0" selected>0%</option>
                 <option value="20">20%</option>
                 <option value="40">40%</option>
                 <option value="60">60%</option>
@@ -261,7 +268,7 @@
             <div>
               <label>Offline (Malls and Stores)</label>
               <select name="Going_out_Offline" class="percent" required>
-                <option value="0">0%</option>
+                <option value="0" selected>0%</option>
                 <option value="20">20%</option>
                 <option value="40">40%</option>
                 <option value="60">60%</option>
@@ -272,7 +279,7 @@
             <div>
               <label>Unorganised/Thrifted</label>
               <select name="Going_out_Unorganised" class="percent" required>
-                <option value="0">0%</option>
+                <option value="0" selected>0%</option>
                 <option value="20">20%</option>
                 <option value="40">40%</option>
                 <option value="60">60%</option>
@@ -369,7 +376,7 @@
             <div>
               <label>Platforms like Myntra/Ajio</label>
               <select name="Casual_Platforms" class="percent" required>
-                <option value="0">0%</option>
+                <option value="0" selected>0%</option>
                 <option value="20">20%</option>
                 <option value="40">40%</option>
                 <option value="60">60%</option>
@@ -380,7 +387,7 @@
             <div>
               <label>Brand Websites</label>
               <select name="Casual_Brand_Websites" class="percent" required>
-                <option value="0">0%</option>
+                <option value="0" selected>0%</option>
                 <option value="20">20%</option>
                 <option value="40">40%</option>
                 <option value="60">60%</option>
@@ -391,7 +398,7 @@
             <div>
               <label>D2C/Social Media</label>
               <select name="Casual_D2C" class="percent" required>
-                <option value="0">0%</option>
+                <option value="0" selected>0%</option>
                 <option value="20">20%</option>
                 <option value="40">40%</option>
                 <option value="60">60%</option>
@@ -402,7 +409,7 @@
             <div>
               <label>Offline (Malls and Stores)</label>
               <select name="Casual_Offline" class="percent" required>
-                <option value="0">0%</option>
+                <option value="0" selected>0%</option>
                 <option value="20">20%</option>
                 <option value="40">40%</option>
                 <option value="60">60%</option>
@@ -413,7 +420,7 @@
             <div>
               <label>Unorganised/Thrifted</label>
               <select name="Casual_Unorganised" class="percent" required>
-                <option value="0">0%</option>
+                <option value="0" selected>0%</option>
                 <option value="20">20%</option>
                 <option value="40">40%</option>
                 <option value="60">60%</option>
@@ -510,7 +517,7 @@
             <div>
               <label>Platforms like Myntra/Ajio</label>
               <select name="Formals_Platforms" class="percent" required>
-                <option value="0">0%</option>
+                <option value="0" selected>0%</option>
                 <option value="20">20%</option>
                 <option value="40">40%</option>
                 <option value="60">60%</option>
@@ -521,7 +528,7 @@
             <div>
               <label>Brand Websites</label>
               <select name="Formals_Brand_Websites" class="percent" required>
-                <option value="0">0%</option>
+                <option value="0" selected>0%</option>
                 <option value="20">20%</option>
                 <option value="40">40%</option>
                 <option value="60">60%</option>
@@ -532,7 +539,7 @@
             <div>
               <label>D2C/Social Media</label>
               <select name="Formals_D2C" class="percent" required>
-                <option value="0">0%</option>
+                <option value="0" selected>0%</option>
                 <option value="20">20%</option>
                 <option value="40">40%</option>
                 <option value="60">60%</option>
@@ -543,7 +550,7 @@
             <div>
               <label>Offline (Malls and Stores)</label>
               <select name="Formals_Offline" class="percent" required>
-                <option value="0">0%</option>
+                <option value="0" selected>0%</option>
                 <option value="20">20%</option>
                 <option value="40">40%</option>
                 <option value="60">60%</option>
@@ -554,7 +561,7 @@
             <div>
               <label>Unorganised/Thrifted</label>
               <select name="Formals_Unorganised" class="percent" required>
-                <option value="0">0%</option>
+                <option value="0" selected>0%</option>
                 <option value="20">20%</option>
                 <option value="40">40%</option>
                 <option value="60">60%</option>
@@ -651,7 +658,7 @@
             <div>
               <label>Platforms like Myntra/Ajio</label>
               <select name="Ethnic_Platforms" class="percent" required>
-                <option value="0">0%</option>
+                <option value="0" selected>0%</option>
                 <option value="20">20%</option>
                 <option value="40">40%</option>
                 <option value="60">60%</option>
@@ -662,7 +669,7 @@
             <div>
               <label>Brand Websites</label>
               <select name="Ethnic_Brand_Websites" class="percent" required>
-                <option value="0">0%</option>
+                <option value="0" selected>0%</option>
                 <option value="20">20%</option>
                 <option value="40">40%</option>
                 <option value="60">60%</option>
@@ -673,7 +680,7 @@
             <div>
               <label>D2C/Social Media</label>
               <select name="Ethnic_D2C" class="percent" required>
-                <option value="0">0%</option>
+                <option value="0" selected>0%</option>
                 <option value="20">20%</option>
                 <option value="40">40%</option>
                 <option value="60">60%</option>
@@ -684,7 +691,7 @@
             <div>
               <label>Offline (Malls and Stores)</label>
               <select name="Ethnic_Offline" class="percent" required>
-                <option value="0">0%</option>
+                <option value="0" selected>0%</option>
                 <option value="20">20%</option>
                 <option value="40">40%</option>
                 <option value="60">60%</option>
@@ -695,7 +702,7 @@
             <div>
               <label>Unorganised/Thrifted</label>
               <select name="Ethnic_Unorganised" class="percent" required>
-                <option value="0">0%</option>
+                <option value="0" selected>0%</option>
                 <option value="20">20%</option>
                 <option value="40">40%</option>
                 <option value="60">60%</option>
@@ -792,7 +799,7 @@
             <div>
               <label>Platforms like Myntra/Ajio</label>
               <select name="Others_Platforms" class="percent" required>
-                <option value="0">0%</option>
+                <option value="0" selected>0%</option>
                 <option value="20">20%</option>
                 <option value="40">40%</option>
                 <option value="60">60%</option>
@@ -803,7 +810,7 @@
             <div>
               <label>Brand Websites</label>
               <select name="Others_Brand_Websites" class="percent" required>
-                <option value="0">0%</option>
+                <option value="0" selected>0%</option>
                 <option value="20">20%</option>
                 <option value="40">40%</option>
                 <option value="60">60%</option>
@@ -814,7 +821,7 @@
             <div>
               <label>D2C/Social Media</label>
               <select name="Others_D2C" class="percent" required>
-                <option value="0">0%</option>
+                <option value="0" selected>0%</option>
                 <option value="20">20%</option>
                 <option value="40">40%</option>
                 <option value="60">60%</option>
@@ -825,7 +832,7 @@
             <div>
               <label>Offline (Malls and Stores)</label>
               <select name="Others_Offline" class="percent" required>
-                <option value="0">0%</option>
+                <option value="0" selected>0%</option>
                 <option value="20">20%</option>
                 <option value="40">40%</option>
                 <option value="60">60%</option>
@@ -836,7 +843,7 @@
             <div>
               <label>Unorganised/Thrifted</label>
               <select name="Others_Unorganised" class="percent" required>
-                <option value="0">0%</option>
+                <option value="0" selected>0%</option>
                 <option value="20">20%</option>
                 <option value="40">40%</option>
                 <option value="60">60%</option>
@@ -876,6 +883,7 @@
       inputs.forEach(input => {
         sum += parseInt(input.value) || 0;
       });
+      console.log('Wardrobe Sum:', sum); // Debugging
       const errorMessage = document.querySelector('.wardrobe-error');
       if (sum !== 100) {
         errorMessage.classList.remove('hidden');
@@ -891,12 +899,18 @@
       const inputs = categoryDiv.querySelectorAll('.percent');
       let sum = 0;
       inputs.forEach(input => {
+        let value;
         if (input.tagName === 'INPUT' && input.checked) {
-          sum += parseInt(input.value) || 0;
+          value = parseInt(input.value) || 0;
         } else if (input.tagName === 'SELECT') {
-          sum += parseInt(input.value) || 0;
+          value = parseInt(input.value) || 0;
+        } else {
+          value = 0;
         }
+        console.log('Input:', input.name, 'Value:', value); // Debugging
+        sum += value;
       });
+      console.log('Category Sum:', sum); // Debugging
       const errorMessage = categoryDiv.querySelector('.error-message');
       if (sum !== 100) {
         errorMessage.classList.remove('hidden');
@@ -916,19 +930,26 @@
           isValid = false;
         }
       });
+      console.log('Form Validation Result:', isValid); // Debugging
       return isValid;
     }
 
     // Handle form submission
     form.addEventListener('submit', e => {
       e.preventDefault();
+      console.log('Submit button clicked'); // Debugging
       if (validateForm()) {
+        console.log('Validation passed, submitting form...'); // Debugging
         fetch(scriptURL, {
           method: 'POST',
           body: new FormData(form)
         })
-        .then(response => response.json())
+        .then(response => {
+          console.log('Fetch Response:', response); // Debugging
+          return response.json();
+        })
         .then(data => {
+          console.log('Fetch Data:', data); // Debugging
           if (data.result === 'success') {
             alert('Thank you! Your responses have been submitted.');
             form.reset();
@@ -937,8 +958,8 @@
           }
         })
         .catch(error => {
-          console.error('Error!', error.message);
-          alert('Error submitting form. Please try again.');
+          console.error('Fetch Error:', error); // Debugging
+          alert('Error submitting form: ' + error.message + '. Please check your network connection and try again.');
         });
       } else {
         alert('Please ensure wardrobe percentages sum to 100% and channel percentages for each category sum to exactly 100%.');
