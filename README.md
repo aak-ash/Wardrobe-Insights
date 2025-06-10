@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wardrobe Insights</title>
+  <title>Clothing Purchase Survey</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     body {
@@ -36,8 +36,8 @@
 </head>
 <body class="bg-gray-50 min-h-screen flex items-center justify-center p-4">
   <div class="form-container mx-auto p-8">
-    <h1 class="text-3xl font-bold text-gray-800 mb-4 text-center">Wardrobe Insights</h1>
-    <p class="text-gray-600 mb-6 text-center">Please share your responses. All fields marked with * are required. Responses are confidential.</p>
+    <h1 class="text-3xl font-bold text-gray-800 mb-4 text-center">Clothing Purchase Survey</h1>
+    <p class="text-gray-600 mb-6 text-center">For individuals aged 18–40. Please share your clothing preferences. All fields marked with * are required. Responses are confidential.</p>
     <form id="surveyForm" class="space-y-8">
       <!-- Demographics -->
       <div class="mb-6">
@@ -101,65 +101,65 @@
       <div class="category mb-6">
         <h2 class="text-xl font-semibold text-gray-700 mb-4 section-title pb-2">Going out/Partywear</h2>
         <div class="mb-6">
-          <p class="text-sm font-medium text-gray-600 mb-3">Purchase Channel Split (select a range for each channel; distribution should approximate 100%): *</p>
+          <p class="text-sm font-medium text-gray-600 mb-3">Purchase Channel Split (select a percentage for each channel; total must be exactly 100%). Round your percentages to the nearest option (e.g., 5% becomes 0%, 15% becomes 20%): *</p>
           <div class="space-y-4">
             <div>
-              <label class="block text-sm font-medium text-gray-700">Platforms like Myntra</label>
-              <select name="Going_out_Myntra" class="percent select-field w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
-                <option value="5">0–10%</option>
-                <option value="17.5">10%–25%</option>
-                <option value="32.5">25%–40%</option>
-                <option value="50">40%–60%</option>
-                <option value="70">60%–80%</option>
-                <option value="90">80%–100%</option>
+              <label class="block text-sm font-medium text-gray-700">Platforms like Myntra/Ajio</label>
+              <select name="Going_out_Platforms" class="percent select-field w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
+                <option value="0">0%</option>
+                <option value="20">20%</option>
+                <option value="40">40%</option>
+                <option value="60">60%</option>
+                <option value="80">80%</option>
+                <option value="100">100%</option>
               </select>
             </div>
             <div>
-              <label class="block text-sm font-medium text-gray-700">Brand Website</label>
-              <select name="Going_out_Brand_Website" class="percent select-field w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
-                <option value="5">0–10%</option>
-                <option value="17.5">10%–25%</option>
-                <option value="32.5">25%–40%</option>
-                <option value="50">40%–60%</option>
-                <option value="70">60%–80%</option>
-                <option value="90">80%–100%</option>
+              <label class="block text-sm font-medium text-gray-700">Brand Websites</label>
+              <select name="Going_out_Brand_Websites" class="percent select-field w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
+                <option value="0">0%</option>
+                <option value="20">20%</option>
+                <option value="40">40%</option>
+                <option value="60">60%</option>
+                <option value="80">80%</option>
+                <option value="100">100%</option>
               </select>
             </div>
             <div>
               <label class="block text-sm font-medium text-gray-700">D2C/Social Media</label>
               <select name="Going_out_D2C" class="percent select-field w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
-                <option value="5">0–10%</option>
-                <option value="17.5">10%–25%</option>
-                <option value="32.5">25%–40%</option>
-                <option value="50">40%–60%</option>
-                <option value="70">60%–80%</option>
-                <option value="90">80%–100%</option>
+                <option value="0">0%</option>
+                <option value="20">20%</option>
+                <option value="40">40%</option>
+                <option value="60">60%</option>
+                <option value="80">80%</option>
+                <option value="100">100%</option>
               </select>
             </div>
             <div>
-              <label class="block text-sm font-medium text-gray-700">Offline Shops</label>
+              <label class="block text-sm font-medium text-gray-700">Offline (Malls and Stores)</label>
               <select name="Going_out_Offline" class="percent select-field w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
-                <option value="5">0–10%</option>
-                <option value="17.5">10%–25%</option>
-                <option value="32.5">25%–40%</option>
-                <option value="50">40%–60%</option>
-                <option value="70">60%–80%</option>
-                <option value="90">80%–100%</option>
+                <option value="0">0%</option>
+                <option value="20">20%</option>
+                <option value="40">40%</option>
+                <option value="60">60%</option>
+                <option value="80">80%</option>
+                <option value="100">100%</option>
               </select>
             </div>
             <div>
-              <label class="block text-sm font-medium text-gray-700">Unorganized/Thrifted</label>
-              <select name="Going_out_Thrifted" class="percent select-field w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
-                <option value="5">0–10%</option>
-                <option value="17.5">10%–25%</option>
-                <option value="32.5">25%–40%</option>
-                <option value="50">40%–60%</option>
-                <option value="70">60%–80%</option>
-                <option value="90">80%–100%</option>
+              <label class="block text-sm font-medium text-gray-700">Unorganised/Thrifted</label>
+              <select name="Going_out_Unorganised" class="percent select-field w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
+                <option value="0">0%</option>
+                <option value="20">20%</option>
+                <option value="40">40%</option>
+                <option value="60">60%</option>
+                <option value="80">80%</option>
+                <option value="100">100%</option>
               </select>
             </div>
           </div>
-          <p class="text-red-500 text-sm mt-2 hidden error-message">The sum of channel distributions should approximate 100%. Please adjust your selections.</p>
+          <p class="text-red-500 text-sm mt-2 hidden error-message">The sum of channel percentages must be exactly 100%. Please adjust your selections.</p>
         </div>
         <div>
           <p class="text-sm font-medium text-gray-600 mb-3">List up to 5 brands you frequently buy for Going out/Partywear:</p>
@@ -177,65 +177,65 @@
       <div class="category mb-6">
         <h2 class="text-xl font-semibold text-gray-700 mb-4 section-title pb-2">Casual Wear</h2>
         <div class="mb-6">
-          <p class="text-sm font-medium text-gray-600 mb-3">Purchase Channel Split (select a range for each channel; distribution should approximate 100%): *</p>
+          <p class="text-sm font-medium text-gray-600 mb-3">Purchase Channel Split (select a percentage for each channel; total must be exactly 100%). Round your percentages to the nearest option (e.g., 5% becomes 0%, 15% becomes 20%): *</p>
           <div class="space-y-4">
             <div>
-              <label class="block text-sm font-medium text-gray-700">Platforms like Myntra</label>
-              <select name="Casual_Myntra" class="percent select-field w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
-                <option value="5">0–10%</option>
-                <option value="17.5">10%–25%</option>
-                <option value="32.5">25%–40%</option>
-                <option value="50">40%–60%</option>
-                <option value="70">60%–80%</option>
-                <option value="90">80%–100%</option>
+              <label class="block text-sm font-medium text-gray-700">Platforms like Myntra/Ajio</label>
+              <select name="Casual_Platforms" class="percent select-field w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
+                <option value="0">0%</option>
+                <option value="20">20%</option>
+                <option value="40">40%</option>
+                <option value="60">60%</option>
+                <option value="80">80%</option>
+                <option value="100">100%</option>
               </select>
             </div>
             <div>
-              <label class="block text-sm font-medium text-gray-700">Brand Website</label>
-              <select name="Casual_Brand_Website" class="percent select-field w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
-                <option value="5">0–10%</option>
-                <option value="17.5">10%–25%</option>
-                <option value="32.5">25%–40%</option>
-                <option value="50">40%–60%</option>
-                <option value="70">60%–80%</option>
-                <option value="90">80%–100%</option>
+              <label class="block text-sm font-medium text-gray-700">Brand Websites</label>
+              <select name="Casual_Brand_Websites" class="percent select-field w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
+                <option value="0">0%</option>
+                <option value="20">20%</option>
+                <option value="40">40%</option>
+                <option value="60">60%</option>
+                <option value="80">80%</option>
+                <option value="100">100%</option>
               </select>
             </div>
             <div>
               <label class="block text-sm font-medium text-gray-700">D2C/Social Media</label>
               <select name="Casual_D2C" class="percent select-field w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
-                <option value="5">0–10%</option>
-                <option value="17.5">10%–25%</option>
-                <option value="32.5">25%–40%</option>
-                <option value="50">40%–60%</option>
-                <option value="70">60%–80%</option>
-                <option value="90">80%–100%</option>
+                <option value="0">0%</option>
+                <option value="20">20%</option>
+                <option value="40">40%</option>
+                <option value="60">60%</option>
+                <option value="80">80%</option>
+                <option value="100">100%</option>
               </select>
             </div>
             <div>
-              <label class="block text-sm font-medium text-gray-700">Offline Shops</label>
+              <label class="block text-sm font-medium text-gray-700">Offline (Malls and Stores)</label>
               <select name="Casual_Offline" class="percent select-field w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
-                <option value="5">0–10%</option>
-                <option value="17.5">10%–25%</option>
-                <option value="32.5">25%–40%</option>
-                <option value="50">40%–60%</option>
-                <option value="70">60%–80%</option>
-                <option value="90">80%–100%</option>
+                <option value="0">0%</option>
+                <option value="20">20%</option>
+                <option value="40">40%</option>
+                <option value="60">60%</option>
+                <option value="80">80%</option>
+                <option value="100">100%</option>
               </select>
             </div>
             <div>
-              <label class="block text-sm font-medium text-gray-700">Unorganized/Thrifted</label>
-              <select name="Casual_Thrifted" class="percent select-field w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
-                <option value="5">0–10%</option>
-                <option value="17.5">10%–25%</option>
-                <option value="32.5">25%–40%</option>
-                <option value="50">40%–60%</option>
-                <option value="70">60%–80%</option>
-                <option value="90">80%–100%</option>
+              <label class="block text-sm font-medium text-gray-700">Unorganised/Thrifted</label>
+              <select name="Casual_Unorganised" class="percent select-field w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
+                <option value="0">0%</option>
+                <option value="20">20%</option>
+                <option value="40">40%</option>
+                <option value="60">60%</option>
+                <option value="80">80%</option>
+                <option value="100">100%</option>
               </select>
             </div>
           </div>
-          <p class="text-red-500 text-sm mt-2 hidden error-message">The sum of channel distributions should approximate 100%. Please adjust your selections.</p>
+          <p class="text-red-500 text-sm mt-2 hidden error-message">The sum of channel percentages must be exactly 100%. Please adjust your selections.</p>
         </div>
         <div>
           <p class="text-sm font-medium text-gray-600 mb-3">List up to 5 brands you frequently buy for Casual Wear:</p>
@@ -253,65 +253,65 @@
       <div class="category mb-6">
         <h2 class="text-xl font-semibold text-gray-700 mb-4 section-title pb-2">Formals/Semi-formals</h2>
         <div class="mb-6">
-          <p class="text-sm font-medium text-gray-600 mb-3">Purchase Channel Split (select a range for each channel; distribution should approximate 100%): *</p>
+          <p class="text-sm font-medium text-gray-600 mb-3">Purchase Channel Split (select a percentage for each channel; total must be exactly 100%). Round your percentages to the nearest option (e.g., 5% becomes 0%, 15% becomes 20%): *</p>
           <div class="space-y-4">
             <div>
-              <label class="block text-sm font-medium text-gray-700">Platforms like Myntra</label>
-              <select name="Formals_Myntra" class="percent select-field w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
-                <option value="5">0–10%</option>
-                <option value="17.5">10%–25%</option>
-                <option value="32.5">25%–40%</option>
-                <option value="50">40%–60%</option>
-                <option value="70">60%–80%</option>
-                <option value="90">80%–100%</option>
+              <label class="block text-sm font-medium text-gray-700">Platforms like Myntra/Ajio</label>
+              <select name="Formals_Platforms" class="percent select-field w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
+                <option value="0">0%</option>
+                <option value="20">20%</option>
+                <option value="40">40%</option>
+                <option value="60">60%</option>
+                <option value="80">80%</option>
+                <option value="100">100%</option>
               </select>
             </div>
             <div>
-              <label class="block text-sm font-medium text-gray-700">Brand Website</label>
-              <select name="Formals_Brand_Website" class="percent select-field w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
-                <option value="5">0–10%</option>
-                <option value="17.5">10%–25%</option>
-                <option value="32.5">25%–40%</option>
-                <option value="50">40%–60%</option>
-                <option value="70">60%–80%</option>
-                <option value="90">80%–100%</option>
+              <label class="block text-sm font-medium text-gray-700">Brand Websites</label>
+              <select name="Formals_Brand_Websites" class="percent select-field w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
+                <option value="0">0%</option>
+                <option value="20">20%</option>
+                <option value="40">40%</option>
+                <option value="60">60%</option>
+                <option value="80">80%</option>
+                <option value="100">100%</option>
               </select>
             </div>
             <div>
               <label class="block text-sm font-medium text-gray-700">D2C/Social Media</label>
               <select name="Formals_D2C" class="percent select-field w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
-                <option value="5">0–10%</option>
-                <option value="17.5">10%–25%</option>
-                <option value="32.5">25%–40%</option>
-                <option value="50">40%–60%</option>
-                <option value="70">60%–80%</option>
-                <option value="90">80%–100%</option>
+                <option value="0">0%</option>
+                <option value="20">20%</option>
+                <option value="40">40%</option>
+                <option value="60">60%</option>
+                <option value="80">80%</option>
+                <option value="100">100%</option>
               </select>
             </div>
             <div>
-              <label class="block text-sm font-medium text-gray-700">Offline Shops</label>
+              <label class="block text-sm font-medium text-gray-700">Offline (Malls and Stores)</label>
               <select name="Formals_Offline" class="percent select-field w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
-                <option value="5">0–10%</option>
-                <option value="17.5">10%–25%</option>
-                <option value="32.5">25%–40%</option>
-                <option value="50">40%–60%</option>
-                <option value="70">60%–80%</option>
-                <option value="90">80%–100%</option>
+                <option value="0">0%</option>
+                <option value="20">20%</option>
+                <option value="40">40%</option>
+                <option value="60">60%</option>
+                <option value="80">80%</option>
+                <option value="100">100%</option>
               </select>
             </div>
             <div>
-              <label class="block text-sm font-medium text-gray-700">Unorganized/Thrifted</label>
-              <select name="Formals_Thrifted" class="percent select-field w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
-                <option value="5">0–10%</option>
-                <option value="17.5">10%–25%</option>
-                <option value="32.5">25%–40%</option>
-                <option value="50">40%–60%</option>
-                <option value="70">60%–80%</option>
-                <option value="90">80%–100%</option>
+              <label class="block text-sm font-medium text-gray-700">Unorganised/Thrifted</label>
+              <select name="Formals_Unorganised" class="percent select-field w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
+                <option value="0">0%</option>
+                <option value="20">20%</option>
+                <option value="40">40%</option>
+                <option value="60">60%</option>
+                <option value="80">80%</option>
+                <option value="100">100%</option>
               </select>
             </div>
           </div>
-          <p class="text-red-500 text-sm mt-2 hidden error-message">The sum of channel distributions should approximate 100%. Please adjust your selections.</p>
+          <p class="text-red-500 text-sm mt-2 hidden error-message">The sum of channel percentages must be exactly 100%. Please adjust your selections.</p>
         </div>
         <div>
           <p class="text-sm font-medium text-gray-600 mb-3">List up to 5 brands you frequently buy for Formals/Semi-formals:</p>
@@ -329,65 +329,65 @@
       <div class="category mb-6">
         <h2 class="text-xl font-semibold text-gray-700 mb-4 section-title pb-2">Ethnic/Indo-western</h2>
         <div class="mb-6">
-          <p class="text-sm font-medium text-gray-600 mb-3">Purchase Channel Split (select a range for each channel; distribution should approximate 100%): *</p>
+          <p class="text-sm font-medium text-gray-600 mb-3">Purchase Channel Split (select a percentage for each channel; total must be exactly 100%). Round your percentages to the nearest option (e.g., 5% becomes 0%, 15% becomes 20%): *</p>
           <div class="space-y-4">
             <div>
-              <label class="block text-sm font-medium text-gray-700">Platforms like Myntra</label>
-              <select name="Ethnic_Myntra" class="percent select-field w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
-                <option value="5">0–10%</option>
-                <option value="17.5">10%–25%</option>
-                <option value="32.5">25%–40%</option>
-                <option value="50">40%–60%</option>
-                <option value="70">60%–80%</option>
-                <option value="90">80%–100%</option>
+              <label class="block text-sm font-medium text-gray-700">Platforms like Myntra/Ajio</label>
+              <select name="Ethnic_Platforms" class="percent select-field w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
+                <option value="0">0%</option>
+                <option value="20">20%</option>
+                <option value="40">40%</option>
+                <option value="60">60%</option>
+                <option value="80">80%</option>
+                <option value="100">100%</option>
               </select>
             </div>
             <div>
-              <label class="block text-sm font-medium text-gray-700">Brand Website</label>
-              <select name="Ethnic_Brand_Website" class="percent select-field w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
-                <option value="5">0–10%</option>
-                <option value="17.5">10%–25%</option>
-                <option value="32.5">25%–40%</option>
-                <option value="50">40%–60%</option>
-                <option value="70">60%–80%</option>
-                <option value="90">80%–100%</option>
+              <label class="block text-sm font-medium text-gray-700">Brand Websites</label>
+              <select name="Ethnic_Brand_Websites" class="percent select-field w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
+                <option value="0">0%</option>
+                <option value="20">20%</option>
+                <option value="40">40%</option>
+                <option value="60">60%</option>
+                <option value="80">80%</option>
+                <option value="100">100%</option>
               </select>
             </div>
             <div>
               <label class="block text-sm font-medium text-gray-700">D2C/Social Media</label>
               <select name="Ethnic_D2C" class="percent select-field w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
-                <option value="5">0–10%</option>
-                <option value="17.5">10%–25%</option>
-                <option value="32.5">25%–40%</option>
-                <option value="50">40%–60%</option>
-                <option value="70">60%–80%</option>
-                <option value="90">80%–100%</option>
+                <option value="0">0%</option>
+                <option value="20">20%</option>
+                <option value="40">40%</option>
+                <option value="60">60%</option>
+                <option value="80">80%</option>
+                <option value="100">100%</option>
               </select>
             </div>
             <div>
-              <label class="block text-sm font-medium text-gray-700">Offline Shops</label>
+              <label class="block text-sm font-medium text-gray-700">Offline (Malls and Stores)</label>
               <select name="Ethnic_Offline" class="percent select-field w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
-                <option value="5">0–10%</option>
-                <option value="17.5">10%–25%</option>
-                <option value="32.5">25%–40%</option>
-                <option value="50">40%–60%</option>
-                <option value="70">60%–80%</option>
-                <option value="90">80%–100%</option>
+                <option value="0">0%</option>
+                <option value="20">20%</option>
+                <option value="40">40%</option>
+                <option value="60">60%</option>
+                <option value="80">80%</option>
+                <option value="100">100%</option>
               </select>
             </div>
             <div>
-              <label class="block text-sm font-medium text-gray-700">Unorganized/Thrifted</label>
-              <select name="Ethnic_Thrifted" class="percent select-field w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
-                <option value="5">0–10%</option>
-                <option value="17.5">10%–25%</option>
-                <option value="32.5">25%–40%</option>
-                <option value="50">40%–60%</option>
-                <option value="70">60%–80%</option>
-                <option value="90">80%–100%</option>
+              <label class="block text-sm font-medium text-gray-700">Unorganised/Thrifted</label>
+              <select name="Ethnic_Unorganised" class="percent select-field w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
+                <option value="0">0%</option>
+                <option value="20">20%</option>
+                <option value="40">40%</option>
+                <option value="60">60%</option>
+                <option value="80">80%</option>
+                <option value="100">100%</option>
               </select>
             </div>
           </div>
-          <p class="text-red-500 text-sm mt-2 hidden error-message">The sum of channel distributions should approximate 100%. Please adjust your selections.</p>
+          <p class="text-red-500 text-sm mt-2 hidden error-message">The sum of channel percentages must be exactly 100%. Please adjust your selections.</p>
         </div>
         <div>
           <p class="text-sm font-medium text-gray-600 mb-3">List up to 5 brands you frequently buy for Ethnic/Indo-western:</p>
@@ -405,65 +405,65 @@
       <div class="category mb-6">
         <h2 class="text-xl font-semibold text-gray-700 mb-4 section-title pb-2">Others (incl. Nightwear)</h2>
         <div class="mb-6">
-          <p class="text-sm font-medium text-gray-600 mb-3">Purchase Channel Split (select a range for each channel; distribution should approximate 100%): *</p>
+          <p class="text-sm font-medium text-gray-600 mb-3">Purchase Channel Split (select a percentage for each channel; total must be exactly 100%). Round your percentages to the nearest option (e.g., 5% becomes 0%, 15% becomes 20%): *</p>
           <div class="space-y-4">
             <div>
-              <label class="block text-sm font-medium text-gray-700">Platforms like Myntra</label>
-              <select name="Others_Myntra" class="percent select-field w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
-                <option value="5">0–10%</option>
-                <option value="17.5">10%–25%</option>
-                <option value="32.5">25%–40%</option>
-                <option value="50">40%–60%</option>
-                <option value="70">60%–80%</option>
-                <option value="90">80%–100%</option>
+              <label class="block text-sm font-medium text-gray-700">Platforms like Myntra/Ajio</label>
+              <select name="Others_Platforms" class="percent select-field w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
+                <option value="0">0%</option>
+                <option value="20">20%</option>
+                <option value="40">40%</option>
+                <option value="60">60%</option>
+                <option value="80">80%</option>
+                <option value="100">100%</option>
               </select>
             </div>
             <div>
-              <label class="block text-sm font-medium text-gray-700">Brand Website</label>
-              <select name="Others_Brand_Website" class="percent select-field w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
-                <option value="5">0–10%</option>
-                <option value="17.5">10%–25%</option>
-                <option value="32.5">25%–40%</option>
-                <option value="50">40%–60%</option>
-                <option value="70">60%–80%</option>
-                <option value="90">80%–100%</option>
+              <label class="block text-sm font-medium text-gray-700">Brand Websites</label>
+              <select name="Others_Brand_Websites" class="percent select-field w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
+                <option value="0">0%</option>
+                <option value="20">20%</option>
+                <option value="40">40%</option>
+                <option value="60">60%</option>
+                <option value="80">80%</option>
+                <option value="100">100%</option>
               </select>
             </div>
             <div>
               <label class="block text-sm font-medium text-gray-700">D2C/Social Media</label>
               <select name="Others_D2C" class="percent select-field w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
-                <option value="5">0–10%</option>
-                <option value="17.5">10%–25%</option>
-                <option value="32.5">25%–40%</option>
-                <option value="50">40%–60%</option>
-                <option value="70">60%–80%</option>
-                <option value="90">80%–100%</option>
+                <option value="0">0%</option>
+                <option value="20">20%</option>
+                <option value="40">40%</option>
+                <option value="60">60%</option>
+                <option value="80">80%</option>
+                <option value="100">100%</option>
               </select>
             </div>
             <div>
-              <label class="block text-sm font-medium text-gray-700">Offline Shops</label>
+              <label class="block text-sm font-medium text-gray-700">Offline (Malls and Stores)</label>
               <select name="Others_Offline" class="percent select-field w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
-                <option value="5">0–10%</option>
-                <option value="17.5">10%–25%</option>
-                <option value="32.5">25%–40%</option>
-                <option value="50">40%–60%</option>
-                <option value="70">60%–80%</option>
-                <option value="90">80%–100%</option>
+                <option value="0">0%</option>
+                <option value="20">20%</option>
+                <option value="40">40%</option>
+                <option value="60">60%</option>
+                <option value="80">80%</option>
+                <option value="100">100%</option>
               </select>
             </div>
             <div>
-              <label class="block text-sm font-medium text-gray-700">Unorganized/Thrifted</label>
-              <select name="Others_Thrifted" class="percent select-field w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
-                <option value="5">0–10%</option>
-                <option value="17.5">10%–25%</option>
-                <option value="32.5">25%–40%</option>
-                <option value="50">40%–60%</option>
-                <option value="70">60%–80%</option>
-                <option value="90">80%–100%</option>
+              <label class="block text-sm font-medium text-gray-700">Unorganised/Thrifted</label>
+              <select name="Others_Unorganised" class="percent select-field w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
+                <option value="0">0%</option>
+                <option value="20">20%</option>
+                <option value="40">40%</option>
+                <option value="60">60%</option>
+                <option value="80">80%</option>
+                <option value="100">100%</option>
               </select>
             </div>
           </div>
-          <p class="text-red-500 text-sm mt-2 hidden error-message">The sum of channel distributions should approximate 100%. Please adjust your selections.</p>
+          <p class="text-red-500 text-sm mt-2 hidden error-message">The sum of channel percentages must be exactly 100%. Please adjust your selections.</p>
         </div>
         <div>
           <p class="text-sm font-medium text-gray-600 mb-3">List up to 5 brands you frequently buy for Others (incl. Nightwear):</p>
@@ -485,7 +485,7 @@
 
   <script>
     const form = document.getElementById('surveyForm');
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbx18pbpszswuA-WvrwaZZy8-GWHTU1v_1zsZi-BHmopMYGrLuP3_E7lPQq3RcVSeHEU/exec'; // You've updated this with your Google Apps Script URL
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx18pbpszswuA-WvrwaZZy8-GWHTU1v_1zsZi-BHmopMYGrLuP3_E7lPQq3RcVSeHEU/exec';
 
     // Validate wardrobe percentages (must sum to 100%)
     function validateWardrobe() {
@@ -504,16 +504,15 @@
       }
     }
 
-    // Validate category channel distributions (sum of midpoints should approximate 100%)
+    // Validate category channel percentages (must sum to exactly 100%)
     function validateCategoryPercentages(categoryDiv) {
       const selects = categoryDiv.querySelectorAll('.percent');
       let sum = 0;
       selects.forEach(select => {
-        sum += parseFloat(select.value);
+        sum += parseInt(select.value) || 0;
       });
       const errorMessage = categoryDiv.querySelector('.error-message');
-      // Allow some flexibility due to ranges (sum between 80 and 120)
-      if (sum < 80 || sum > 120) {
+      if (sum !== 100) {
         errorMessage.classList.remove('hidden');
         return false;
       } else {
@@ -556,7 +555,7 @@
           alert('Error submitting form. Please try again.');
         });
       } else {
-        alert('Please ensure wardrobe percentages sum to 100% and channel distributions approximate 100%.');
+        alert('Please ensure wardrobe percentages sum to 100% and channel percentages for each category sum to exactly 100%.');
       }
     });
   </script>
