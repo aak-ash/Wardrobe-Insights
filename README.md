@@ -332,7 +332,7 @@
 
   <script>
     const form = document.getElementById('surveyForm');
-    const scriptURL = 'YOUR_WEB_APP_URL'; // Replace with your Google Apps Script web app URL
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx18pbpszswuA-WvrwaZZy8-GWHTU1v_1zsZi-BHmopMYGrLuP3_E7lPQq3RcVSeHEU/exec'; // Replace with your Google Apps Script web app URL
 
     // Validate wardrobe percentages
     function validateWardrobe() {
