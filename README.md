@@ -1,4 +1,3 @@
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -46,16 +45,13 @@
       text-align: left;
       font-weight: 500;
     }
-    /* Style for dropdowns on mobile */
     .channel-select {
-      display: none; /* Hidden by default, shown on mobile */
+      display: none;
     }
     @media (max-width: 640px) {
-      /* Hide the table on mobile */
       .channel-table {
         display: none;
       }
-      /* Show the dropdowns on mobile */
       .channel-select {
         display: block;
       }
@@ -84,7 +80,6 @@
       }
     }
     @media (min-width: 641px) {
-      /* Ensure table is visible on larger screens */
       .channel-table {
         display: block;
       }
@@ -100,9 +95,8 @@
 <body class="bg-gray-50 min-h-screen flex items-center justify-center p-4">
   <div class="form-container mx-auto p-8">
     <h1 class="text-3xl font-bold text-gray-800 mb-4 text-center">Fashion Survey - Wardrobe Insights</h1>
-    <p class="text-gray-600 mb-6 text-center">let us uncover your fashion journey! Share your shopping habits, favorite brands, and wardrobe vibes in this quick survey. All fields marked with * are required, and your responses are 100% confidential.</p>
+    <p class="text-gray-600 mb-6 text-center">Let us uncover your fashion journey! Share your shopping habits, favorite brands, and wardrobe vibes in this quick survey. All fields marked with * are required, and your responses are 100% confidential.</p>
     <form id="surveyForm" class="space-y-8">
-      <!-- Demographics -->
       <div class="mb-6">
         <h2 class="text-xl font-semibold text-gray-700 mb-4 section-title pb-2">Personal Information</h2>
         <div class="space-y-4">
@@ -131,42 +125,39 @@
         </div>
       </div>
 
-      <!-- Wardrobe Split -->
       <div class="mb-6">
         <h2 class="text-xl font-semibold text-gray-700 mb-4 section-title pb-2">Wardrobe Composition</h2>
         <p class="text-sm font-medium text-gray-600 mb-3">Estimate the percentage of your wardrobe for each category (total must sum to 100%): *</p>
         <div class="space-y-4">
           <div>
             <label class="block text-sm font-medium text-gray-700">Going out/Partywear (%) <span class="text-sm text-gray-600">(Special occasion statement pieces, e.g., cocktail dresses, tuxedos)</span></label>
-            <input type="number" name="Wardrobe_Going_out" min="0" max="100" class="wardrobe-percent input-field w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
+            <input type="number" name="Wardrobe_Going_out" min="0" max="100" value="0" class="wardrobe-percent input-field w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
           </div>
           <div>
             <label class="block text-sm font-medium text-gray-700">Casual Wear (%) <span class="text-sm text-gray-600">(Everyday informal wear, including loungewear, e.g., t-shirts, jeans)</span></label>
-            <input type="number" name="Wardrobe_Casual" min="0" max="100" class="wardrobe-percent input-field w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
+            <input type="number" name="Wardrobe_Casual" min="0" max="100" value="0" class="wardrobe-percent input-field w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
           </div>
           <div>
             <label class="block text-sm font-medium text-gray-700">Formals/Semi-formals (%) <span class="text-sm text-gray-600">(Professional or business attire, e.g., suits, blazers)</span></label>
-            <input type="number" name="Wardrobe_Formals" min="0" max="100" class="wardrobe-percent input-field w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
+            <input type="number" name="Wardrobe_Formals" min="0" max="100" value="0" class="wardrobe-percent input-field w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
           </div>
           <div>
             <label class="block text-sm font-medium text-gray-700">Ethnic/Indo-western (%) <span class="text-sm text-gray-600">(Traditional or fusion cultural wear, e.g., sarees, kurtas)</span></label>
-            <input type="number" name="Wardrobe_Ethnic" min="0" max="100" class="wardrobe-percent input-field w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
+            <input type="number" name="Wardrobe_Ethnic" min="0" max="100" value="0" class="wardrobe-percent input-field w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
           </div>
           <div>
             <label class="block text-sm font-medium text-gray-700">Others (incl. Nightwear) (%) <span class="text-sm text-gray-600">(Nightwear, gym wear, or specialty items, e.g., pajamas, athletic wear)</span></label>
-            <input type="number" name="Wardrobe_Others" min="0" max="100" class="wardrobe-percent input-field w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
+            <input type="number" name="Wardrobe_Others" min="0" max="100" value="0" class="wardrobe-percent input-field w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
           </div>
         </div>
         <p class="text-red-500 text-sm mt-2 hidden wardrobe-error">Percentages must sum to 100%.</p>
       </div>
 
-      <!-- Category: Going out/Partywear -->
       <div class="category mb-6">
         <h2 class="text-xl font-semibold text-gray-700 mb-4 section-title pb-2">Going out/Partywear</h2>
         <p class="text-sm text-gray-600 mb-3">Clothing designed for special occasions like parties, functions, or fancy dinners, where you wear statement pieces to stand out (e.g., cocktail dresses, tuxedos, sequined outfits).</p>
         <div class="mb-6">
           <p class="text-sm font-medium text-gray-600 mb-3">Purchase Channel Split (select a percentage for each channel; total must be exactly 100%). Round your estimates to the nearest option using: 0%–10% → 0%, 11%–30% → 20%, 31%–50% → 40%, 51%–70% → 60%, 71%–90% → 80%, 91%–100% → 100%. Select one option per channel: *</p>
-          <!-- Table for Desktop -->
           <div class="channel-table overflow-x-auto">
             <table class="w-full table-auto border-collapse">
               <thead>
@@ -183,7 +174,7 @@
               <tbody>
                 <tr>
                   <td>Platforms like Myntra/Ajio</td>
-                  <td><input type="radio" name="Going_out_Platforms" value="0" class="percent radio-input" id="going_out_platforms_0" required></td>
+                  <td><input type="radio" name="Going_out_Platforms" value="0" class="percent radio-input" id="going_out_platforms_0" required checked></td>
                   <td><input type="radio" name="Going_out_Platforms" value="20" class="percent radio-input" id="going_out_platforms_20"></td>
                   <td><input type="radio" name="Going_out_Platforms" value="40" class="percent radio-input" id="going_out_platforms_40"></td>
                   <td><input type="radio" name="Going_out_Platforms" value="60" class="percent radio-input" id="going_out_platforms_60"></td>
@@ -192,7 +183,7 @@
                 </tr>
                 <tr>
                   <td>Brand Websites</td>
-                  <td><input type="radio" name="Going_out_Brand_Websites" value="0" class="percent radio-input" id="going_out_brand_websites_0" required></td>
+                  <td><input type="radio" name="Going_out_Brand_Websites" value="0" class="percent radio-input" id="going_out_brand_websites_0" required checked></td>
                   <td><input type="radio" name="Going_out_Brand_Websites" value="20" class="percent radio-input" id="going_out_brand_websites_20"></td>
                   <td><input type="radio" name="Going_out_Brand_Websites" value="40" class="percent radio-input" id="going_out_brand_websites_40"></td>
                   <td><input type="radio" name="Going_out_Brand_Websites" value="60" class="percent radio-input" id="going_out_brand_websites_60"></td>
@@ -201,7 +192,7 @@
                 </tr>
                 <tr>
                   <td>D2C/Social Media</td>
-                  <td><input type="radio" name="Going_out_D2C" value="0" class="percent radio-input" id="going_out_d2c_0" required></td>
+                  <td><input type="radio" name="Going_out_D2C" value="0" class="percent radio-input" id="going_out_d2c_0" required checked></td>
                   <td><input type="radio" name="Going_out_D2C" value="20" class="percent radio-input" id="going_out_d2c_20"></td>
                   <td><input type="radio" name="Going_out_D2C" value="40" class="percent radio-input" id="going_out_d2c_40"></td>
                   <td><input type="radio" name="Going_out_D2C" value="60" class="percent radio-input" id="going_out_d2c_60"></td>
@@ -210,7 +201,7 @@
                 </tr>
                 <tr>
                   <td>Offline (Malls and Stores)</td>
-                  <td><input type="radio" name="Going_out_Offline" value="0" class="percent radio-input" id="going_out_offline_0" required></td>
+                  <td><input type="radio" name="Going_out_Offline" value="0" class="percent radio-input" id="going_out_offline_0" required checked></td>
                   <td><input type="radio" name="Going_out_Offline" value="20" class="percent radio-input" id="going_out_offline_20"></td>
                   <td><input type="radio" name="Going_out_Offline" value="40" class="percent radio-input" id="going_out_offline_40"></td>
                   <td><input type="radio" name="Going_out_Offline" value="60" class="percent radio-input" id="going_out_offline_60"></td>
@@ -219,7 +210,7 @@
                 </tr>
                 <tr>
                   <td>Unorganised/Thrifted</td>
-                  <td><input type="radio" name="Going_out_Unorganised" value="0" class="percent radio-input" id="going_out_unorganised_0" required></td>
+                  <td><input type="radio" name="Going_out_Unorganised" value="0" class="percent radio-input" id="going_out_unorganised_0" required checked></td>
                   <td><input type="radio" name="Going_out_Unorganised" value="20" class="percent radio-input" id="going_out_unorganised_20"></td>
                   <td><input type="radio" name="Going_out_Unorganised" value="40" class="percent radio-input" id="going_out_unorganised_40"></td>
                   <td><input type="radio" name="Going_out_Unorganised" value="60" class="percent radio-input" id="going_out_unorganised_60"></td>
@@ -229,12 +220,11 @@
               </tbody>
             </table>
           </div>
-          <!-- Dropdowns for Mobile -->
           <div class="channel-select">
             <div>
               <label>Platforms like Myntra/Ajio</label>
               <select name="Going_out_Platforms" class="percent dropdown-input" required>
-                <option value="0">0%</option>
+                <option value="0" selected>0%</option>
                 <option value="20">20%</option>
                 <option value="40">40%</option>
                 <option value="60">60%</option>
@@ -245,7 +235,7 @@
             <div>
               <label>Brand Websites</label>
               <select name="Going_out_Brand_Websites" class="percent dropdown-input" required>
-                <option value="0">0%</option>
+                <option value="0" selected>0%</option>
                 <option value="20">20%</option>
                 <option value="40">40%</option>
                 <option value="60">60%</option>
@@ -256,7 +246,7 @@
             <div>
               <label>D2C/Social Media</label>
               <select name="Going_out_D2C" class="percent dropdown-input" required>
-                <option value="0">0%</option>
+                <option value="0" selected>0%</option>
                 <option value="20">20%</option>
                 <option value="40">40%</option>
                 <option value="60">60%</option>
@@ -267,7 +257,7 @@
             <div>
               <label>Offline (Malls and Stores)</label>
               <select name="Going_out_Offline" class="percent dropdown-input" required>
-                <option value="0">0%</option>
+                <option value="0" selected>0%</option>
                 <option value="20">20%</option>
                 <option value="40">40%</option>
                 <option value="60">60%</option>
@@ -278,7 +268,7 @@
             <div>
               <label>Unorganised/Thrifted</label>
               <select name="Going_out_Unorganised" class="percent dropdown-input" required>
-                <option value="0">0%</option>
+                <option value="0" selected>0%</option>
                 <option value="20">20%</option>
                 <option value="40">40%</option>
                 <option value="60">60%</option>
@@ -301,13 +291,11 @@
         </div>
       </div>
 
-      <!-- Category: Casual Wear -->
       <div class="category mb-6">
         <h2 class="text-xl font-semibold text-gray-700 mb-4 section-title pb-2">Casual Wear</h2>
         <p class="text-sm text-gray-600 mb-3">Everyday clothing for informal settings like travel, casual brunches, meeting friends, or lounging at home, prioritizing comfort and simplicity (e.g., t-shirts, jeans, sneakers, loungewear).</p>
         <div class="mb-6">
           <p class="text-sm font-medium text-gray-600 mb-3">Purchase Channel Split (select a percentage for each channel; total must be exactly 100%). Round your estimates to the nearest option using: 0%–10% → 0%, 11%–30% → 20%, 31%–50% → 40%, 51%–70% → 60%, 71%–90% → 80%, 91%–100% → 100%. Select one option per channel: *</p>
-          <!-- Table for Desktop -->
           <div class="channel-table overflow-x-auto">
             <table class="w-full table-auto border-collapse">
               <thead>
@@ -324,7 +312,7 @@
               <tbody>
                 <tr>
                   <td>Platforms like Myntra/Ajio</td>
-                  <td><input type="radio" name="Casual_Platforms" value="0" class="percent radio-input" id="casual_platforms_0" required></td>
+                  <td><input type="radio" name="Casual_Platforms" value="0" class="percent radio-input" id="casual_platforms_0" required checked></td>
                   <td><input type="radio" name="Casual_Platforms" value="20" class="percent radio-input" id="casual_platforms_20"></td>
                   <td><input type="radio" name="Casual_Platforms" value="40" class="percent radio-input" id="casual_platforms_40"></td>
                   <td><input type="radio" name="Casual_Platforms" value="60" class="percent radio-input" id="casual_platforms_60"></td>
@@ -333,7 +321,7 @@
                 </tr>
                 <tr>
                   <td>Brand Websites</td>
-                  <td><input type="radio" name="Casual_Brand_Websites" value="0" class="percent radio-input" id="casual_brand_websites_0" required></td>
+                  <td><input type="radio" name="Casual_Brand_Websites" value="0" class="percent radio-input" id="casual_brand_websites_0" required checked></td>
                   <td><input type="radio" name="Casual_Brand_Websites" value="20" class="percent radio-input" id="casual_brand_websites_20"></td>
                   <td><input type="radio" name="Casual_Brand_Websites" value="40" class="percent radio-input" id="casual_brand_websites_40"></td>
                   <td><input type="radio" name="Casual_Brand_Websites" value="60" class="percent radio-input" id="casual_brand_websites_60"></td>
@@ -342,7 +330,7 @@
                 </tr>
                 <tr>
                   <td>D2C/Social Media</td>
-                  <td><input type="radio" name="Casual_D2C" value="0" class="percent radio-input" id="casual_d2c_0" required></td>
+                  <td><input type="radio" name="Casual_D2C" value="0" class="percent radio-input" id="casual_d2c_0" required checked></td>
                   <td><input type="radio" name="Casual_D2C" value="20" class="percent radio-input" id="casual_d2c_20"></td>
                   <td><input type="radio" name="Casual_D2C" value="40" class="percent radio-input" id="casual_d2c_40"></td>
                   <td><input type="radio" name="Casual_D2C" value="60" class="percent radio-input" id="casual_d2c_60"></td>
@@ -351,7 +339,7 @@
                 </tr>
                 <tr>
                   <td>Offline (Malls and Stores)</td>
-                  <td><input type="radio" name="Casual_Offline" value="0" class="percent radio-input" id="casual_offline_0" required></td>
+                  <td><input type="radio" name="Casual_Offline" value="0" class="percent radio-input" id="casual_offline_0" required checked></td>
                   <td><input type="radio" name="Casual_Offline" value="20" class="percent radio-input" id="casual_offline_20"></td>
                   <td><input type="radio" name="Casual_Offline" value="40" class="percent radio-input" id="casual_offline_40"></td>
                   <td><input type="radio" name="Casual_Offline" value="60" class="percent radio-input" id="casual_offline_60"></td>
@@ -360,7 +348,7 @@
                 </tr>
                 <tr>
                   <td>Unorganised/Thrifted</td>
-                  <td><input type="radio" name="Casual_Unorganised" value="0" class="percent radio-input" id="casual_unorganised_0" required></td>
+                  <td><input type="radio" name="Casual_Unorganised" value="0" class="percent radio-input" id="casual_unorganised_0" required checked></td>
                   <td><input type="radio" name="Casual_Unorganised" value="20" class="percent radio-input" id="casual_unorganised_20"></td>
                   <td><input type="radio" name="Casual_Unorganised" value="40" class="percent radio-input" id="casual_unorganised_40"></td>
                   <td><input type="radio" name="Casual_Unorganised" value="60" class="percent radio-input" id="casual_unorganised_60"></td>
@@ -370,12 +358,11 @@
               </tbody>
             </table>
           </div>
-          <!-- Dropdowns for Mobile -->
           <div class="channel-select">
             <div>
               <label>Platforms like Myntra/Ajio</label>
               <select name="Casual_Platforms" class="percent dropdown-input" required>
-                <option value="0">0%</option>
+                <option value="0" selected>0%</option>
                 <option value="20">20%</option>
                 <option value="40">40%</option>
                 <option value="60">60%</option>
@@ -386,7 +373,7 @@
             <div>
               <label>Brand Websites</label>
               <select name="Casual_Brand_Websites" class="percent dropdown-input" required>
-                <option value="0">0%</option>
+                <option value="0" selected>0%</option>
                 <option value="20">20%</option>
                 <option value="40">40%</option>
                 <option value="60">60%</option>
@@ -397,7 +384,7 @@
             <div>
               <label>D2C/Social Media</label>
               <select name="Casual_D2C" class="percent dropdown-input" required>
-                <option value="0">0%</option>
+                <option value="0" selected>0%</option>
                 <option value="20">20%</option>
                 <option value="40">40%</option>
                 <option value="60">60%</option>
@@ -408,7 +395,7 @@
             <div>
               <label>Offline (Malls and Stores)</label>
               <select name="Casual_Offline" class="percent dropdown-input" required>
-                <option value="0">0%</option>
+                <option value="0" selected>0%</option>
                 <option value="20">20%</option>
                 <option value="40">40%</option>
                 <option value="60">60%</option>
@@ -419,7 +406,7 @@
             <div>
               <label>Unorganised/Thrifted</label>
               <select name="Casual_Unorganised" class="percent dropdown-input" required>
-                <option value="0">0%</option>
+                <option value="0" selected>0%</option>
                 <option value="20">20%</option>
                 <option value="40">40%</option>
                 <option value="60">60%</option>
@@ -442,13 +429,11 @@
         </div>
       </div>
 
-      <!-- Category: Formals/Semi-formals -->
       <div class="category mb-6">
         <h2 class="text-xl font-semibold text-gray-700 mb-4 section-title pb-2">Formals/Semi-formals</h2>
         <p class="text-sm text-gray-600 mb-3">Professional or business-appropriate clothing for workplaces, meetings, or semi-formal events, typically structured and polished (e.g., suits, blazers, dress shirts).</p>
         <div class="mb-6">
           <p class="text-sm font-medium text-gray-600 mb-3">Purchase Channel Split (select a percentage for each channel; total must be exactly 100%). Round your estimates to the nearest option using: 0%–10% → 0%, 11%–30% → 20%, 31%–50% → 40%, 51%–70% → 60%, 71%–90% → 80%, 91%–100% → 100%. Select one option per channel: *</p>
-          <!-- Table for Desktop -->
           <div class="channel-table overflow-x-auto">
             <table class="w-full table-auto border-collapse">
               <thead>
@@ -465,7 +450,7 @@
               <tbody>
                 <tr>
                   <td>Platforms like Myntra/Ajio</td>
-                  <td><input type="radio" name="Formals_Platforms" value="0" class="percent radio-input" id="formals_platforms_0" required></td>
+                  <td><input type="radio" name="Formals_Platforms" value="0" class="percent radio-input" id="formals_platforms_0" required checked></td>
                   <td><input type="radio" name="Formals_Platforms" value="20" class="percent radio-input" id="formals_platforms_20"></td>
                   <td><input type="radio" name="Formals_Platforms" value="40" class="percent radio-input" id="formals_platforms_40"></td>
                   <td><input type="radio" name="Formals_Platforms" value="60" class="percent radio-input" id="formals_platforms_60"></td>
@@ -474,7 +459,7 @@
                 </tr>
                 <tr>
                   <td>Brand Websites</td>
-                  <td><input type="radio" name="Formals_Brand_Websites" value="0" class="percent radio-input" id="formals_brand_websites_0" required></td>
+                  <td><input type="radio" name="Formals_Brand_Websites" value="0" class="percent radio-input" id="formals_brand_websites_0" required checked></td>
                   <td><input type="radio" name="Formals_Brand_Websites" value="20" class="percent radio-input" id="formals_brand_websites_20"></td>
                   <td><input type="radio" name="Formals_Brand_Websites" value="40" class="percent radio-input" id="formals_brand_websites_40"></td>
                   <td><input type="radio" name="Formals_Brand_Websites" value="60" class="percent radio-input" id="formals_brand_websites_60"></td>
@@ -483,7 +468,7 @@
                 </tr>
                 <tr>
                   <td>D2C/Social Media</td>
-                  <td><input type="radio" name="Formals_D2C" value="0" class="percent radio-input" id="formals_d2c_0" required></td>
+                  <td><input type="radio" name="Formals_D2C" value="0" class="percent radio-input" id="formals_d2c_0" required checked></td>
                   <td><input type="radio" name="Formals_D2C" value="20" class="percent radio-input" id="formals_d2c_20"></td>
                   <td><input type="radio" name="Formals_D2C" value="40" class="percent radio-input" id="formals_d2c_40"></td>
                   <td><input type="radio" name="Formals_D2C" value="60" class="percent radio-input" id="formals_d2c_60"></td>
@@ -492,7 +477,7 @@
                 </tr>
                 <tr>
                   <td>Offline (Malls and Stores)</td>
-                  <td><input type="radio" name="Formals_Offline" value="0" class="percent radio-input" id="formals_offline_0" required></td>
+                  <td><input type="radio" name="Formals_Offline" value="0" class="percent radio-input" id="formals_offline_0" required checked></td>
                   <td><input type="radio" name="Formals_Offline" value="20" class="percent radio-input" id="formals_offline_20"></td>
                   <td><input type="radio" name="Formals_Offline" value="40" class="percent radio-input" id="formals_offline_40"></td>
                   <td><input type="radio" name="Formals_Offline" value="60" class="percent radio-input" id="formals_offline_60"></td>
@@ -501,7 +486,7 @@
                 </tr>
                 <tr>
                   <td>Unorganised/Thrifted</td>
-                  <td><input type="radio" name="Formals_Unorganised" value="0" class="percent radio-input" id="formals_unorganised_0" required></td>
+                  <td><input type="radio" name="Formals_Unorganised" value="0" class="percent radio-input" id="formals_unorganised_0" required checked></td>
                   <td><input type="radio" name="Formals_Unorganised" value="20" class="percent radio-input" id="formals_unorganised_20"></td>
                   <td><input type="radio" name="Formals_Unorganised" value="40" class="percent radio-input" id="formals_unorganised_40"></td>
                   <td><input type="radio" name="Formals_Unorganised" value="60" class="percent radio-input" id="formals_unorganised_60"></td>
@@ -511,12 +496,11 @@
               </tbody>
             </table>
           </div>
-          <!-- Dropdowns for Mobile -->
           <div class="channel-select">
             <div>
               <label>Platforms like Myntra/Ajio</label>
               <select name="Formals_Platforms" class="percent dropdown-input" required>
-                <option value="0">0%</option>
+                <option value="0" selected>0%</option>
                 <option value="20">20%</option>
                 <option value="40">40%</option>
                 <option value="60">60%</option>
@@ -527,7 +511,7 @@
             <div>
               <label>Brand Websites</label>
               <select name="Formals_Brand_Websites" class="percent dropdown-input" required>
-                <option value="0">0%</option>
+                <option value="0" selected>0%</option>
                 <option value="20">20%</option>
                 <option value="40">40%</option>
                 <option value="60">60%</option>
@@ -538,7 +522,7 @@
             <div>
               <label>D2C/Social Media</label>
               <select name="Formals_D2C" class="percent dropdown-input" required>
-                <option value="0">0%</option>
+                <option value="0" selected>0%</option>
                 <option value="20">20%</option>
                 <option value="40">40%</option>
                 <option value="60">60%</option>
@@ -549,7 +533,7 @@
             <div>
               <label>Offline (Malls and Stores)</label>
               <select name="Formals_Offline" class="percent dropdown-input" required>
-                <option value="0">0%</option>
+                <option value="0" selected>0%</option>
                 <option value="20">20%</option>
                 <option value="40">40%</option>
                 <option value="60">60%</option>
@@ -560,7 +544,7 @@
             <div>
               <label>Unorganised/Thrifted</label>
               <select name="Formals_Unorganised" class="percent dropdown-input" required>
-                <option value="0">0%</option>
+                <option value="0" selected>0%</option>
                 <option value="20">20%</option>
                 <option value="40">40%</option>
                 <option value="60">60%</option>
@@ -583,13 +567,11 @@
         </div>
       </div>
 
-      <!-- Category: Ethnic/Indo-western -->
       <div class="category mb-6">
         <h2 class="text-xl font-semibold text-gray-700 mb-4 section-title pb-2">Ethnic/Indo-western</h2>
         <p class="text-sm text-gray-600 mb-3">Traditional or fusion clothing reflecting cultural heritage or modern adaptations, worn for festivals, weddings, or cultural events (e.g., sarees, kurtas, lehengas, Indo-western dresses).</p>
         <div class="mb-6">
           <p class="text-sm font-medium text-gray-600 mb-3">Purchase Channel Split (select a percentage for each channel; total must be exactly 100%). Round your estimates to the nearest option using: 0%–10% → 0%, 11%–30% → 20%, 31%–50% → 40%, 51%–70% → 60%, 71%–90% → 80%, 91%–100% → 100%. Select one option per channel: *</p>
-          <!-- Table for Desktop -->
           <div class="channel-table overflow-x-auto">
             <table class="w-full table-auto border-collapse">
               <thead>
@@ -606,7 +588,7 @@
               <tbody>
                 <tr>
                   <td>Platforms like Myntra/Ajio</td>
-                  <td><input type="radio" name="Ethnic_Platforms" value="0" class="percent radio-input" id="ethnic_platforms_0" required></td>
+                  <td><input type="radio" name="Ethnic_Platforms" value="0" class="percent radio-input" id="ethnic_platforms_0" required checked></td>
                   <td><input type="radio" name="Ethnic_Platforms" value="20" class="percent radio-input" id="ethnic_platforms_20"></td>
                   <td><input type="radio" name="Ethnic_Platforms" value="40" class="percent radio-input" id="ethnic_platforms_40"></td>
                   <td><input type="radio" name="Ethnic_Platforms" value="60" class="percent radio-input" id="ethnic_platforms_60"></td>
@@ -615,7 +597,7 @@
                 </tr>
                 <tr>
                   <td>Brand Websites</td>
-                  <td><input type="radio" name="Ethnic_Brand_Websites" value="0" class="percent radio-input" id="ethnic_brand_websites_0" required></td>
+                  <td><input type="radio" name="Ethnic_Brand_Websites" value="0" class="percent radio-input" id="ethnic_brand_websites_0" required checked></td>
                   <td><input type="radio" name="Ethnic_Brand_Websites" value="20" class="percent radio-input" id="ethnic_brand_websites_20"></td>
                   <td><input type="radio" name="Ethnic_Brand_Websites" value="40" class="percent radio-input" id="ethnic_brand_websites_40"></td>
                   <td><input type="radio" name="Ethnic_Brand_Websites" value="60" class="percent radio-input" id="ethnic_brand_websites_60"></td>
@@ -624,7 +606,7 @@
                 </tr>
                 <tr>
                   <td>D2C/Social Media</td>
-                  <td><input type="radio" name="Ethnic_D2C" value="0" class="percent radio-input" id="ethnic_d2c_0" required></td>
+                  <td><input type="radio" name="Ethnic_D2C" value="0" class="percent radio-input" id="ethnic_d2c_0" required checked></td>
                   <td><input type="radio" name="Ethnic_D2C" value="20" class="percent radio-input" id="ethnic_d2c_20"></td>
                   <td><input type="radio" name="Ethnic_D2C" value="40" class="percent radio-input" id="ethnic_d2c_40"></td>
                   <td><input type="radio" name="Ethnic_D2C" value="60" class="percent radio-input" id="ethnic_d2c_60"></td>
@@ -633,7 +615,7 @@
                 </tr>
                 <tr>
                   <td>Offline (Malls and Stores)</td>
-                  <td><input type="radio" name="Ethnic_Offline" value="0" class="percent radio-input" id="ethnic_offline_0" required></td>
+                  <td><input type="radio" name="Ethnic_Offline" value="0" class="percent radio-input" id="ethnic_offline_0" required checked></td>
                   <td><input type="radio" name="Ethnic_Offline" value="20" class="percent radio-input" id="ethnic_offline_20"></td>
                   <td><input type="radio" name="Ethnic_Offline" value="40" class="percent radio-input" id="ethnic_offline_40"></td>
                   <td><input type="radio" name="Ethnic_Offline" value="60" class="percent radio-input" id="ethnic_offline_60"></td>
@@ -642,7 +624,7 @@
                 </tr>
                 <tr>
                   <td>Unorganised/Thrifted</td>
-                  <td><input type="radio" name="Ethnic_Unorganised" value="0" class="percent radio-input" id="ethnic_unorganised_0" required></td>
+                  <td><input type="radio" name="Ethnic_Unorganised" value="0" class="percent radio-input" id="ethnic_unorganised_0" required checked></td>
                   <td><input type="radio" name="Ethnic_Unorganised" value="20" class="percent radio-input" id="ethnic_unorganised_20"></td>
                   <td><input type="radio" name="Ethnic_Unorganised" value="40" class="percent radio-input" id="ethnic_unorganised_40"></td>
                   <td><input type="radio" name="Ethnic_Unorganised" value="60" class="percent radio-input" id="ethnic_unorganised_60"></td>
@@ -652,12 +634,11 @@
               </tbody>
             </table>
           </div>
-          <!-- Dropdowns for Mobile -->
           <div class="channel-select">
             <div>
               <label>Platforms like Myntra/Ajio</label>
               <select name="Ethnic_Platforms" class="percent dropdown-input" required>
-                <option value="0">0%</option>
+                <option value="0" selected>0%</option>
                 <option value="20">20%</option>
                 <option value="40">40%</option>
                 <option value="60">60%</option>
@@ -668,7 +649,7 @@
             <div>
               <label>Brand Websites</label>
               <select name="Ethnic_Brand_Websites" class="percent dropdown-input" required>
-                <option value="0">0%</option>
+                <option value="0" selected>0%</option>
                 <option value="20">20%</option>
                 <option value="40">40%</option>
                 <option value="60">60%</option>
@@ -679,7 +660,7 @@
             <div>
               <label>D2C/Social Media</label>
               <select name="Ethnic_D2C" class="percent dropdown-input" required>
-                <option value="0">0%</option>
+                <option value="0" selected>0%</option>
                 <option value="20">20%</option>
                 <option value="40">40%</option>
                 <option value="60">60%</option>
@@ -690,7 +671,7 @@
             <div>
               <label>Offline (Malls and Stores)</label>
               <select name="Ethnic_Offline" class="percent dropdown-input" required>
-                <option value="0">0%</option>
+                <option value="0" selected>0%</option>
                 <option value="20">20%</option>
                 <option value="40">40%</option>
                 <option value="60">60%</option>
@@ -701,7 +682,7 @@
             <div>
               <label>Unorganised/Thrifted</label>
               <select name="Ethnic_Unorganised" class="percent dropdown-input" required>
-                <option value="0">0%</option>
+                <option value="0" selected>0%</option>
                 <option value="20">20%</option>
                 <option value="40">40%</option>
                 <option value="60">60%</option>
@@ -724,13 +705,11 @@
         </div>
       </div>
 
-      <!-- Category: Others (incl. Nightwear) -->
       <div class="category mb-6">
         <h2 class="text-xl font-semibold text-gray-700 mb-4 section-title pb-2">Others (incl. Nightwear)</h2>
         <p class="text-sm text-gray-600 mb-3">Miscellaneous clothing not covered by other categories, including nightwear, gym wear, or other specialty items (e.g., pajamas, athletic wear, costumes).</p>
         <div class="mb-6">
           <p class="text-sm font-medium text-gray-600 mb-3">Purchase Channel Split (select a percentage for each channel; total must be exactly 100%). Round your estimates to the nearest option using: 0%–10% → 0%, 11%–30% → 20%, 31%–50% → 40%, 51%–70% → 60%, 71%–90% → 80%, 91%–100% → 100%. Select one option per channel: *</p>
-          <!-- Table for Desktop -->
           <div class="channel-table overflow-x-auto">
             <table class="w-full table-auto border-collapse">
               <thead>
@@ -747,7 +726,7 @@
               <tbody>
                 <tr>
                   <td>Platforms like Myntra/Ajio</td>
-                  <td><input type="radio" name="Others_Platforms" value="0" class="percent radio-input" id="others_platforms_0" required></td>
+                  <td><input type="radio" name="Others_Platforms" value="0" class="percent radio-input" id="others_platforms_0" required checked></td>
                   <td><input type="radio" name="Others_Platforms" value="20" class="percent radio-input" id="others_platforms_20"></td>
                   <td><input type="radio" name="Others_Platforms" value="40" class="percent radio-input" id="others_platforms_40"></td>
                   <td><input type="radio" name="Others_Platforms" value="60" class="percent radio-input" id="others_platforms_60"></td>
@@ -756,7 +735,7 @@
                 </tr>
                 <tr>
                   <td>Brand Websites</td>
-                  <td><input type="radio" name="Others_Brand_Websites" value="0" class="percent radio-input" id="others_brand_websites_0" required></td>
+                  <td><input type="radio" name="Others_Brand_Websites" value="0" class="percent radio-input" id="others_brand_websites_0" required checked></td>
                   <td><input type="radio" name="Others_Brand_Websites" value="20" class="percent radio-input" id="others_brand_websites_20"></td>
                   <td><input type="radio" name="Others_Brand_Websites" value="40" class="percent radio-input" id="others_brand_websites_40"></td>
                   <td><input type="radio" name="Others_Brand_Websites" value="60" class="percent radio-input" id="others_brand_websites_60"></td>
@@ -765,7 +744,7 @@
                 </tr>
                 <tr>
                   <td>D2C/Social Media</td>
-                  <td><input type="radio" name="Others_D2C" value="0" class="percent radio-input" id="others_d2c_0" required></td>
+                  <td><input type="radio" name="Others_D2C" value="0" class="percent radio-input" id="others_d2c_0" required checked></td>
                   <td><input type="radio" name="Others_D2C" value="20" class="percent radio-input" id="others_d2c_20"></td>
                   <td><input type="radio" name="Others_D2C" value="40" class="percent radio-input" id="others_d2c_40"></td>
                   <td><input type="radio" name="Others_D2C" value="60" class="percent radio-input" id="others_d2c_60"></td>
@@ -774,7 +753,7 @@
                 </tr>
                 <tr>
                   <td>Offline (Malls and Stores)</td>
-                  <td><input type="radio" name="Others_Offline" value="0" class="percent radio-input" id="others_offline_0" required></td>
+                  <td><input type="radio" name="Others_Offline" value="0" class="percent radio-input" id="others_offline_0" required checked></td>
                   <td><input type="radio" name="Others_Offline" value="20" class="percent radio-input" id="others_offline_20"></td>
                   <td><input type="radio" name="Others_Offline" value="40" class="percent radio-input" id="others_offline_40"></td>
                   <td><input type="radio" name="Others_Offline" value="60" class="percent radio-input" id="others_offline_60"></td>
@@ -783,7 +762,7 @@
                 </tr>
                 <tr>
                   <td>Unorganised/Thrifted</td>
-                  <td><input type="radio" name="Others_Unorganised" value="0" class="percent radio-input" id="others_unorganised_0" required></td>
+                  <td><input type="radio" name="Others_Unorganised" value="0" class="percent radio-input" id="others_unorganised_0" required checked></td>
                   <td><input type="radio" name="Others_Unorganised" value="20" class="percent radio-input" id="others_unorganised_20"></td>
                   <td><input type="radio" name="Others_Unorganised" value="40" class="percent radio-input" id="others_unorganised_40"></td>
                   <td><input type="radio" name="Others_Unorganised" value="60" class="percent radio-input" id="others_unorganised_60"></td>
@@ -793,12 +772,11 @@
               </tbody>
             </table>
           </div>
-          <!-- Dropdowns for Mobile -->
           <div class="channel-select">
             <div>
               <label>Platforms like Myntra/Ajio</label>
               <select name="Others_Platforms" class="percent dropdown-input" required>
-                <option value="0">0%</option>
+                <option value="0" selected>0%</option>
                 <option value="20">20%</option>
                 <option value="40">40%</option>
                 <option value="60">60%</option>
@@ -809,7 +787,7 @@
             <div>
               <label>Brand Websites</label>
               <select name="Others_Brand_Websites" class="percent dropdown-input" required>
-                <option value="0">0%</option>
+                <option value="0" selected>0%</option>
                 <option value="20">20%</option>
                 <option value="40">40%</option>
                 <option value="60">60%</option>
@@ -820,7 +798,7 @@
             <div>
               <label>D2C/Social Media</label>
               <select name="Others_D2C" class="percent dropdown-input" required>
-                <option value="0">0%</option>
+                <option value="0" selected>0%</option>
                 <option value="20">20%</option>
                 <option value="40">40%</option>
                 <option value="60">60%</option>
@@ -831,7 +809,7 @@
             <div>
               <label>Offline (Malls and Stores)</label>
               <select name="Others_Offline" class="percent dropdown-input" required>
-                <option value="0">0%</option>
+                <option value="0" selected>0%</option>
                 <option value="20">20%</option>
                 <option value="40">40%</option>
                 <option value="60">60%</option>
@@ -842,7 +820,7 @@
             <div>
               <label>Unorganised/Thrifted</label>
               <select name="Others_Unorganised" class="percent dropdown-input" required>
-                <option value="0">0%</option>
+                <option value="0" selected>0%</option>
                 <option value="20">20%</option>
                 <option value="40">40%</option>
                 <option value="60">60%</option>
@@ -879,15 +857,56 @@
     // Synchronize radio buttons and dropdowns
     function syncInputs(source, targetClass) {
       const name = source.name;
-      const value = source.value;
+      const value = source.value || "0"; // Ensure 0 is treated as a valid value
+      console.log(`Syncing ${source.tagName} ${name}: Source Value = ${value}`);
+
       const targets = document.querySelectorAll(`.${targetClass}[name="${name}"]`);
       targets.forEach(target => {
         if (target.tagName === 'INPUT' && target.type === 'radio') {
-          target.checked = (target.value === value);
+          const isChecked = target.value === value;
+          target.checked = isChecked;
+          console.log(`Set radio ${target.id} (value=${target.value}) checked=${isChecked}`);
         } else if (target.tagName === 'SELECT') {
           target.value = value;
+          console.log(`Set dropdown ${target.name} to value=${value}`);
         }
       });
+    }
+
+    // Initialize dropdowns and radio buttons on page load
+    function initializeInputs() {
+      console.log("Initializing inputs on page load...");
+      const radioInputs = document.querySelectorAll('.radio-input');
+      const dropdownInputs = document.querySelectorAll('.dropdown-input');
+
+      // Ensure all radio buttons have a default selection
+      const radioGroups = new Set();
+      radioInputs.forEach(radio => {
+        radioGroups.add(radio.name);
+      });
+      radioGroups.forEach(name => {
+        const radios = document.querySelectorAll(`.radio-input[name="${name}"]`);
+        const checkedRadio = Array.from(radios).find(radio => radio.checked);
+        if (!checkedRadio) {
+          const firstRadio = radios[0];
+          firstRadio.checked = true;
+          console.log(`No radio selected for ${name}, defaulting to ${firstRadio.value}`);
+          syncInputs(firstRadio, 'dropdown-input');
+        } else {
+          syncInputs(checkedRadio, 'dropdown-input');
+        }
+      });
+
+      // Ensure all dropdowns have a default selection
+      dropdownInputs.forEach(dropdown => {
+        if (!dropdown.value) {
+          dropdown.value = "0";
+          console.log(`No value selected for dropdown ${dropdown.name}, defaulting to 0`);
+          syncInputs(dropdown, 'radio-input');
+        }
+      });
+
+      console.log("Initialization complete.");
     }
 
     // Add event listeners to sync inputs
@@ -909,10 +928,17 @@
     function validateWardrobe() {
       const inputs = document.querySelectorAll('.wardrobe-percent');
       let sum = 0;
+
+      // Force DOM update by triggering input event
       inputs.forEach(input => {
-        sum += parseInt(input.value) || 0;
+        input.dispatchEvent(new Event('input', { bubbles: true }));
+        const rawValue = input.value;
+        const parsedValue = parseInt(rawValue) || 0;
+        console.log(`Wardrobe Input ${input.name}: Raw Value = ${rawValue}, Parsed Value = ${parsedValue}`);
+        sum += parsedValue;
       });
-      console.log('Wardrobe Sum:', sum);
+
+      console.log(`Wardrobe Sum: ${sum}, Valid: ${sum === 100}`);
       const errorMessage = document.querySelector('.wardrobe-error');
       errorMessage.classList.toggle('hidden', sum === 100);
       return sum === 100;
@@ -932,11 +958,11 @@
         } else if (input.tagName === 'SELECT') {
           value = parseInt(input.value) || 0;
         }
-        console.log('Input:', input.name, 'Value:', value);
+        console.log(`Input: ${input.name} Value: ${value}`);
         sum += value;
       });
 
-      console.log('Category Sum:', sum);
+      console.log(`Category Sum: ${sum}`);
       const errorMessage = categoryDiv.querySelector('.error-message');
       errorMessage.classList.toggle('hidden', sum === 100);
       return sum === 100;
@@ -948,7 +974,7 @@
       const categories = document.querySelectorAll('.category');
       const categoriesValid = Array.from(categories).every(category => validateCategoryPercentages(category));
       const isValid = wardrobeValid && categoriesValid;
-      console.log('Form Validation Result:', isValid);
+      console.log(`Form Validation Result: ${isValid}`);
       return isValid;
     }
 
@@ -957,6 +983,7 @@
       e.preventDefault();
       console.log('Submit button clicked');
       if (validateForm()) {
+        console.log('Validation passed, submitting form');
         fetch(scriptURL, {
           method: 'POST',
           body: new FormData(form),
@@ -974,6 +1001,7 @@
           console.log('Fetch Response Body:', data);
           alert('Thank you! Your survey has been submitted successfully.');
           form.reset();
+          initializeInputs(); // Re-initialize inputs after form reset
         })
         .catch(error => {
           console.error('Error submitting form:', error);
@@ -985,10 +1013,32 @@
       }
     });
 
-    // Re-validate on window resize to handle view changes
+    // Re-validate and sync on window resize to handle view changes
+    let lastWidth = window.innerWidth;
     window.addEventListener('resize', () => {
-      validateForm();
+      const currentWidth = window.innerWidth;
+      const viewChanged = (lastWidth <= MOBILE_BREAKPOINT && currentWidth > MOBILE_BREAKPOINT) || 
+                          (lastWidth > MOBILE_BREAKPOINT && currentWidth <= MOBILE_BREAKPOINT);
+      if (viewChanged) {
+        console.log(`View changed: ${lastWidth > MOBILE_BREAKPOINT ? 'Desktop' : 'Mobile'} to ${currentWidth > MOBILE_BREAKPOINT ? 'Desktop' : 'Mobile'}`);
+        const isMobile = currentWidth <= MOBILE_BREAKPOINT;
+        const sourceClass = isMobile ? 'dropdown-input' : 'radio-input';
+        const targetClass = isMobile ? 'radio-input' : 'dropdown-input';
+        const sources = document.querySelectorAll(`.${sourceClass}`);
+        sources.forEach(source => {
+          if (source.tagName === 'INPUT' && source.checked) {
+            syncInputs(source, targetClass);
+          } else if (source.tagName === 'SELECT') {
+            syncInputs(source, targetClass);
+          }
+        });
+        validateForm();
+      }
+      lastWidth = currentWidth;
     });
+
+    // Run initialization on page load
+    document.addEventListener('DOMContentLoaded', initializeInputs);
   </script>
 </body>
 </html>
