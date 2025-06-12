@@ -169,8 +169,8 @@
 <body class="min-h-screen flex items-center justify-center p-4 md:p-8">
   <div class="form-container mx-auto p-6 md:p-10 w-full">
     <div class="text-center mb-8">
-      <h1 class="fashion-header text-3xl md:text-4xl font-bold text-gray-800 mb-2">Style Insights</h1>
-      <p class="text-lg text-gray-600">Share your fashion preferences and help shape the future of style</p>
+      <h1 class="fashion-header text-3xl md:text-4xl font-bold text-gray-800 mb-2">Shopping & Curation Insights</h1>
+      <p class="text-lg text-gray-600">Share your fashion preferences</p>
     </div>
 
     <div class="fashion-banner">
@@ -517,7 +517,7 @@
           <p class="text-red-500 text-sm mt-2 hidden error-message">The sum of channel percentages must be exactly 100%. Please adjust your selections.</p>
         </div>
         <div>
-          <p class="text-sm font-medium text-gray-600 mb-3">Your favorite brands for Going out/Partywear:</p>
+          <p class="text-sm font-medium text-gray-600 mb-3">Your favorite brands for Casual wear / Lounge wear:</p>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <input type="text" name="Going_out_Brand1" class="brand-input w-full p-3 border rounded-lg focus:outline-none" placeholder="Brand 1">
             <input type="text" name="Going_out_Brand2" class="brand-input w-full p-3 border rounded-lg focus:outline-none" placeholder="Brand 2">
@@ -531,7 +531,7 @@
       <!-- Formals/Semi-formals Section -->
       <div class="category mb-10 p-6 bg-white rounded-lg border border-gray-100 shadow-sm">
         <div class="flex items-center mb-4">
-          <h2 class="fashion-header text-xl font-semibold text-gray-800">Formals/Semi-formals</h2>
+          <h2 class="fashion-header text-xl font-semibold text-gray-800">Office Wears (Formals/Semi-formals)</h2>
           <span class="category-tag ml-2">Professional</span>
         </div>
         <p class="text-sm text-gray-600 mb-6">Professional or business-appropriate clothing for workplaces, meetings, or semi-formal events, typically structured and polished (e.g., suits, blazers, dress shirts).</p>
@@ -660,7 +660,7 @@
           <p class="text-red-500 text-sm mt-2 hidden error-message">The sum of channel percentages must be exactly 100%. Please adjust your selections.</p>
         </div>
         <div>
-          <p class="text-sm font-medium text-gray-600 mb-3">Your favorite brands for Going out/Partywear:</p>
+          <p class="text-sm font-medium text-gray-600 mb-3">Your favorite brands for Office wear (Formals / Semi-formals):</p>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <input type="text" name="Going_out_Brand1" class="brand-input w-full p-3 border rounded-lg focus:outline-none" placeholder="Brand 1">
             <input type="text" name="Going_out_Brand2" class="brand-input w-full p-3 border rounded-lg focus:outline-none" placeholder="Brand 2">
@@ -803,7 +803,7 @@
           <p class="text-red-500 text-sm mt-2 hidden error-message">The sum of channel percentages must be exactly 100%. Please adjust your selections.</p>
         </div>
         <div>
-          <p class="text-sm font-medium text-gray-600 mb-3">Your favorite brands for Going out/Partywear:</p>
+          <p class="text-sm font-medium text-gray-600 mb-3">Your favorite brands for Ethnic / Indo-western:</p>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <input type="text" name="Going_out_Brand1" class="brand-input w-full p-3 border rounded-lg focus:outline-none" placeholder="Brand 1">
             <input type="text" name="Going_out_Brand2" class="brand-input w-full p-3 border rounded-lg focus:outline-none" placeholder="Brand 2">
@@ -946,7 +946,7 @@
           <p class="text-red-500 text-sm mt-2 hidden error-message">The sum of channel percentages must be exactly 100%. Please adjust your selections.</p>
         </div>
         <div>
-          <p class="text-sm font-medium text-gray-600 mb-3">Your favorite brands for Going out/Partywear:</p>
+          <p class="text-sm font-medium text-gray-600 mb-3">Your favorite brands:</p>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <input type="text" name="Going_out_Brand1" class="brand-input w-full p-3 border rounded-lg focus:outline-none" placeholder="Brand 1">
             <input type="text" name="Going_out_Brand2" class="brand-input w-full p-3 border rounded-lg focus:outline-none" placeholder="Brand 2">
@@ -959,7 +959,7 @@
 
       <div class="text-center mt-12">
         <button type="submit" id="submitBtn" class="submit-btn text-white px-10 py-4 rounded-lg text-lg font-medium">Submit Your Style Insights</button>
-        <p class="text-xs text-gray-500 mt-3">Your responses will help shape the future of fashion</p>
+        <p class="text-xs text-gray-500 mt-3">Thanks for sharing your Insights :)</p>
       </div>
     </form>
   </div>
