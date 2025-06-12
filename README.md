@@ -1,4 +1,3 @@
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -166,7 +165,6 @@
       padding-right: 30px !important;
     }
   </style>
-
 </head>
 <body class="min-h-screen flex items-center justify-center p-4 md:p-8">
   <div class="form-container mx-auto p-6 md:p-10 w-full">
@@ -195,12 +193,16 @@
           </div>
           <div>
             <label class="block text-sm font-medium text-gray-700 mb-1">Age *</label>
-            <select name="Age" class="select-field w-full p-3 border rounded-lg focus:outline-none" required>
-              <option value="">Select age range</option>
-              <option value="18-25">18–25</option>
-              <option value="26-30">26–30</option>
-              <option value="31-35">31–35</option>
-              <option value="36-40">36–40</option>
+            <input type="number" name="Age" min="1" max="120" class="input-field w-full p-3 border rounded-lg focus:outline-none" required>
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">Gender *</label>
+            <select name="Gender" class="select-field w-full p-3 border rounded-lg focus:outline-none" required>
+              <option value="">Select gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Non-binary">Non-binary</option>
+              <option value="Prefer not to say">Prefer not to say</option>
             </select>
           </div>
           <div>
@@ -239,7 +241,6 @@
         </div>
         <p class="text-red-500 text-sm mt-2 hidden wardrobe-error">Percentages must sum to 100%.</p>
       </div>
-
 
       <!-- Category Sections (Going out/Partywear) -->
       <div class="category mb-10 p-6 bg-white rounded-lg border border-gray-100 shadow-sm">
@@ -384,8 +385,6 @@
         </div>
       </div>
 
-      <!-- Repeat similar structure for other categories (Casual Wear, Formals, etc.) -->
-       
       <!-- Casual Wear Section -->
       <div class="category mb-10 p-6 bg-white rounded-lg border border-gray-100 shadow-sm">
         <div class="flex items-center mb-4">
@@ -394,7 +393,6 @@
         </div>
         <p class="text-sm text-gray-600 mb-6">Everyday clothing for informal settings like travel, casual brunches, meeting friends, or lounging at home, prioritizing comfort and simplicity (e.g., t-shirts, jeans, sneakers, loungewear).</p>
         
-        <!-- Similar content structure as Going out/Partywear -->
         <div class="mb-6">
           <p class="text-sm font-medium text-gray-600 mb-3">Purchase Channel Split (select a percentage for each channel; total must be exactly 100%). Round your estimates to the nearest option using: 0%–10% → 0%, 11%–30% → 20%, 31%–50% → 40%, 51%–70% → 60%, 71%–90% → 80%, 91%–100% → 100%. Select one option per channel: *</p>
           <div class="channel-table overflow-x-auto">
@@ -528,7 +526,6 @@
             <input type="text" name="Going_out_Brand5" class="brand-input w-full p-3 border rounded-lg focus:outline-none md:col-span-2" placeholder="Brand 5">
           </div>
         </div>
-        <!-- ... -->
       </div>
 
       <!-- Formals/Semi-formals Section -->
@@ -539,8 +536,7 @@
         </div>
         <p class="text-sm text-gray-600 mb-6">Professional or business-appropriate clothing for workplaces, meetings, or semi-formal events, typically structured and polished (e.g., suits, blazers, dress shirts).</p>
         
-        <!-- Similar content structure as Going out/Partywear -->
-         <div class="mb-6">
+        <div class="mb-6">
           <p class="text-sm font-medium text-gray-600 mb-3">Purchase Channel Split (select a percentage for each channel; total must be exactly 100%). Round your estimates to the nearest option using: 0%–10% → 0%, 11%–30% → 20%, 31%–50% → 40%, 51%–70% → 60%, 71%–90% → 80%, 91%–100% → 100%. Select one option per channel: *</p>
           <div class="channel-table overflow-x-auto">
             <table class="w-full table-auto border-collapse">
@@ -673,7 +669,6 @@
             <input type="text" name="Going_out_Brand5" class="brand-input w-full p-3 border rounded-lg focus:outline-none md:col-span-2" placeholder="Brand 5">
           </div>
         </div>
-        <!-- ... -->
       </div>
 
       <!-- Ethnic/Indo-western Section -->
@@ -684,8 +679,7 @@
         </div>
         <p class="text-sm text-gray-600 mb-6">Traditional or fusion clothing reflecting cultural heritage or modern adaptations, worn for festivals, weddings, or cultural events (e.g., sarees, kurtas, lehengas, Indo-western dresses).</p>
         
-        <!-- Similar content structure as Going out/Partywear -->
-          <div class="mb-6">
+        <div class="mb-6">
           <p class="text-sm font-medium text-gray-600 mb-3">Purchase Channel Split (select a percentage for each channel; total must be exactly 100%). Round your estimates to the nearest option using: 0%–10% → 0%, 11%–30% → 20%, 31%–50% → 40%, 51%–70% → 60%, 71%–90% → 80%, 91%–100% → 100%. Select one option per channel: *</p>
           <div class="channel-table overflow-x-auto">
             <table class="w-full table-auto border-collapse">
@@ -818,7 +812,6 @@
             <input type="text" name="Going_out_Brand5" class="brand-input w-full p-3 border rounded-lg focus:outline-none md:col-span-2" placeholder="Brand 5">
           </div>
         </div>
-        <!-- ... -->
       </div>
 
       <!-- Others Section -->
@@ -829,8 +822,7 @@
         </div>
         <p class="text-sm text-gray-600 mb-6">Miscellaneous clothing not covered by other categories, including nightwear, gym wear, or other specialty items (e.g., pajamas, athletic wear, costumes).</p>
         
-        <!-- Similar content structure as Going out/Partywear -->
-         <div class="mb-6">
+        <div class="mb-6">
           <p class="text-sm font-medium text-gray-600 mb-3">Purchase Channel Split (select a percentage for each channel; total must be exactly 100%). Round your estimates to the nearest option using: 0%–10% → 0%, 11%–30% → 20%, 31%–50% → 40%, 51%–70% → 60%, 71%–90% → 80%, 91%–100% → 100%. Select one option per channel: *</p>
           <div class="channel-table overflow-x-auto">
             <table class="w-full table-auto border-collapse">
@@ -963,7 +955,6 @@
             <input type="text" name="Going_out_Brand5" class="brand-input w-full p-3 border rounded-lg focus:outline-none md:col-span-2" placeholder="Brand 5">
           </div>
         </div>
-        <!-- ... -->
       </div>
 
       <div class="text-center mt-12">
@@ -974,7 +965,6 @@
   </div>
 
   <script>
-    // (Keep the same JavaScript functionality as in the original)
     const form = document.getElementById('surveyForm');
     const scriptURL = 'https://script.google.com/macros/s/AKfycbx18pbpszswuA-WvrwaZZy8-GWHTU1v_1zsZi-BHmopMYGrLuP3_E7lPQq3RcVSeHEU/exec';
     const MOBILE_BREAKPOINT = 640;
